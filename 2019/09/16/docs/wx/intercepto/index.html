@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="/** *此方法为小程序拦截器对 请求进行拦截 */ const  app = getApp(); /**封装请求方法**/ function requestfrom(apiurl, apidata, urltype) {   if(isEmpty(apiurl)){return false;}  return new Promise(function (resolve, reject) {">
+<meta name="keywords" content="php,java,javascript,node,go,lua,nginx,sphinx,elasticesarch,算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blogs">
+<meta property="og:url" content="https://wulimax.github.io/2019/09/16/docs/wx/intercepto/index.html">
+<meta property="og:site_name" content="blogs">
+<meta property="og:description" content="/** *此方法为小程序拦截器对 请求进行拦截 */ const  app = getApp(); /**封装请求方法**/ function requestfrom(apiurl, apidata, urltype) {   if(isEmpty(apiurl)){return false;}  return new Promise(function (resolve, reject) {">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-23T07:30:52.602Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blogs">
+<meta name="twitter:description" content="/** *此方法为小程序拦截器对 请求进行拦截 */ const  app = getApp(); /**封装请求方法**/ function requestfrom(apiurl, apidata, urltype) {   if(isEmpty(apiurl)){return false;}  return new Promise(function (resolve, reject) {">
+  
+    <link rel="alternate" href="/atom.xml" title="blogs" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">blogs</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wulimax.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-docs/wx/intercepto" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/16/docs/wx/intercepto/" class="article-date">
+  <time datetime="2019-09-16T07:05:48.238Z" itemprop="datePublished">2019-09-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        /**
+*此方法为小程序拦截器对 请求进行拦截
+*/
+const  app = getApp();
+/**封装请求方法**/
+function requestfrom(apiurl, apidata, urltype) {
+  if(isEmpty(apiurl)){return false;}
+ return new Promise(function (resolve, reject) {
+   //填充url
+   if (apiurl.indexOf("被填充路由是否存在") == -1) {apiurl = '填充路由'+apiurl;}
+   //默认指定请求方式 post
+    if (isEmpty(urltype)){ urltype = 'POST';}
+    //指定用户下标
+   if (isEmpty(apidata.token)) {
+     if(isEmpty(app.globalData.token)){
+       apidata.token = wx.getStorageSync('token');
+     }else{
+     apidata.token = app.globalData.token;
+      }
+  }
+    wx.request({
+      //后台接口地址
+      url: apiurl,
+      data: apidata,
+      method: urltype,
+      header: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'Accept': 'application/json'
+      },
+      success: function (res) {
+          // wx.setStorageSync('token', res.data)
+          resolve(res.data);
+      }
+    })
+  })
+}
+
+
+/**主请求方法 重写*/
+function requestad(apiurl,apidata,urltype){
+  var token = null;
+  if(isEmpty(app.globalData.token)){
+    token = wx.getStorageSync('token');
+  }else{
+    token = app.globalData.token;
+  }
+ return new Promise(function (resolve, reject) {
+    /**判断userid*/
+  if(isEmpty(token) && isEmpty(apidata.token)){
+     customlogin().then(ees=>{
+        apidata.token = ees.data;
+        requestfrom(apiurl, apidata, urltype).then(values=>{
+     if(values.code ==13){
+        requestfrom('重新获取信息',{login:1}).then(item=>{
+         if (isEmpty(item)) { resolve({code:13,msg:'token获取失败'})
+         }else{
+          if(!isEmpty(item)){
+             wx.setStorageSync('token', item);
+             app.globalData.token = item;
+             apidata.token = item;
+          }
+           requestfrom(apiurl, apidata, urltype).then(items=>{resolve(items);})
+         }  
+        })
+     }else if(values.code == 14){
+          //token空 重新登录
+        customlogin().then(vales=>{apidata.token = vales.data;requestfrom(apiurl, apidata, urltype).then(items => {resolve(items); })})
+     }else if(values.code == 15){
+        //用户未绑定手机号
+     wx.navigateTo({
+       url: "注册路由",
+     }) 
+     }else{//返回数据
+      resolve(values)}
+  })
+     })
+  }else{
+        /**判断userid*/
+    requestfrom(apiurl, apidata, urltype).then(values=>{
+     if(values.code ==13){
+        requestfrom('更新token接口',{login:1}).then(item=>{
+         if (isEmpty(item)) { resolve({code:13,msg:'token获取失败'})
+         }else{
+           if(!isEmpty(item)){
+            wx.setStorageSync('token', item);
+            app.globalData.token = item;
+            apidata.token = item;
+          }
+           requestfrom(apiurl, apidata, urltype).then(items=>{resolve(items);})
+         }  
+        })
+     }else if(values.code == 14){
+          //token空 重新登录
+        customlogin().then(vales=>{apidata.token = vales.data;requestfrom(apiurl, apidata, urltype).then(items => {resolve(items); })})
+     }else if(values.code == 15){
+        //用户未绑定手机号
+     wx.navigateTo({
+       url: "注册路由",
+     }) 
+     }else{//返回数据
+      resolve(values)}
+  })
+  }
+ })
+}
+
+/**登录方法 */
+function customlogin(aurl){
+  return new Promise(function (resolve, reject) { 
+  wx.getSetting({
+    success: function (setting) {
+      if (setting.authSetting['scope.userInfo']) { 
+        //已授权
+        loginuserinfo().then(values => {
+          resolve(values)
+        });
+      }else{
+         //登录异常跳转至登录页面授权登录
+          wx.navigateTo({
+             url: '登录路由',
+          })
+      }
+    }
+  })
+  })
+}
+/**登录方法 */
+function loginuserinfo(){
+  return new Promise(function (resolve, reject) { 
+    wx.login({
+      success: function (loginRes) {
+        if (loginRes.code) {
+          wx.getUserInfo({
+            withCredentials: true,
+            success: function (res_user) {
+              requestfrom('登录接口', { code: loginRes.code, encryptedData: res_user.encryptedData, iv: res_user.iv,login:1 }).then(values=>{
+               if(values.code !=1){resolve({code:11,msg:'登录失败'});return false; }
+                wx.setStorageSync('token', values.data)
+                wx.setStorageSync('userinfo', values.userinfo)
+                if(!isEmpty(values.data) && !isEmpty(values.userinfo)){
+                  app.globalData.token = values.data;
+                 app.globalData.userinfo = values.userinfo;
+                }
+                resolve(values)
+              })
+             
+            }
+          })
+        }
+      }
+    })
+  });
+}
+/**判断是否为空 */
+function isEmpty(obj) {
+  if (typeof obj == "undefined" || obj == null || obj == "") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+module.exports = {
+  request: requestad,
+  customlogin: customlogin,
+  isEmpty: isEmpty
+}
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wulimax.github.io/2019/09/16/docs/wx/intercepto/" data-id="ck0m2ip46001eq4u1dv2ey48s" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/16/docs/wx/README/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/16/docs/TopN/README/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/09/16/url/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/wx/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/wx/intercepto/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/TopN/README/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 wulimax<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

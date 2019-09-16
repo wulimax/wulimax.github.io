@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="算法小练选择排序12345678910111213141516171819/**每日一练 2018/12/05 * 选择排序: 每次选择一个数 然后遍历其后的每一个数,和这个数比较 * 时间复杂度:O(N^2) * 算法特点: 排序时间和初始顺序无关 无论顺序如何都是O(N^2) * */private void sortIntegers(int[] arr)&amp;#123;    if(arr ==">
+<meta name="keywords" content="php,java,javascript,node,go,lua,nginx,sphinx,elasticesarch,算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blogs">
+<meta property="og:url" content="https://wulimax.github.io/2019/09/16/docs/arithmetic/README/index.html">
+<meta property="og:site_name" content="blogs">
+<meta property="og:description" content="算法小练选择排序12345678910111213141516171819/**每日一练 2018/12/05 * 选择排序: 每次选择一个数 然后遍历其后的每一个数,和这个数比较 * 时间复杂度:O(N^2) * 算法特点: 排序时间和初始顺序无关 无论顺序如何都是O(N^2) * */private void sortIntegers(int[] arr)&amp;#123;    if(arr ==">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-12-07T02:08:42.977Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blogs">
+<meta name="twitter:description" content="算法小练选择排序12345678910111213141516171819/**每日一练 2018/12/05 * 选择排序: 每次选择一个数 然后遍历其后的每一个数,和这个数比较 * 时间复杂度:O(N^2) * 算法特点: 排序时间和初始顺序无关 无论顺序如何都是O(N^2) * */private void sortIntegers(int[] arr)&amp;#123;    if(arr ==">
+  
+    <link rel="alternate" href="/atom.xml" title="blogs" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">blogs</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wulimax.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-docs/arithmetic/README" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/16/docs/arithmetic/README/" class="article-date">
+  <time datetime="2019-09-16T07:05:47.572Z" itemprop="datePublished">2019-09-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="算法小练"><a href="#算法小练" class="headerlink" title="算法小练"></a>算法小练</h2><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**每日一练 2018/12/05</span></span><br><span class="line"><span class="comment"> * 选择排序: 每次选择一个数 然后遍历其后的每一个数,和这个数比较</span></span><br><span class="line"><span class="comment"> * 时间复杂度:O(N^2)</span></span><br><span class="line"><span class="comment"> * 算法特点: 排序时间和初始顺序无关 无论顺序如何都是O(N^2)</span></span><br><span class="line"><span class="comment"> * */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sortIntegers</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr == <span class="keyword">null</span> || arr.length &lt;= <span class="number">1</span>)&#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">    <span class="keyword">for</span> ( <span class="keyword">int</span> i =<span class="number">0</span>;i &lt; arr.length ;i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> min = i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i +<span class="number">1</span>;j&lt;arr.length;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(arr[j] &lt; arr[min])&#123;</span><br><span class="line">                min = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> tmp = arr[min];</span><br><span class="line">        arr[min] = arr[i];</span><br><span class="line">        arr[i] = tmp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**每日一练 2018/12/06</span></span><br><span class="line"><span class="comment"> * 插入排序:像打牌时整理牌,小的插入到左边,大的插入到右边</span></span><br><span class="line"><span class="comment"> * 算法特点: 最坏的情况下复杂度O(N^2)</span></span><br><span class="line"><span class="comment"> * 依赖于初始排序顺序 ,特别适合于部分有序数组 完全是有序数组的情况下 复杂度为O(N)</span></span><br><span class="line"><span class="comment"> * 逆时排序是复杂度为 O(N^2)</span></span><br><span class="line"><span class="comment"> * */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sortIntegers2</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr == <span class="keyword">null</span> || arr.length &lt;= <span class="number">1</span>)&#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;arr.length ;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j =i;j&gt;<span class="number">0</span>;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(arr[j] &lt;arr[j-<span class="number">1</span>])&#123;</span><br><span class="line">                <span class="keyword">int</span> tmp = arr[j];</span><br><span class="line">                arr[j-<span class="number">1</span>] = tmp;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**每日一练:冒泡排序</span></span><br><span class="line"><span class="comment"> * 冒泡排序 :像冒泡泡一样,每次一个数滚到最后去</span></span><br><span class="line"><span class="comment"> * 时间复杂度: O(N^2)</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> arr</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sortIntegers3</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr == <span class="keyword">null</span> || arr.length &lt; <span class="number">1</span>)&#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">    <span class="keyword">boolean</span> needNextPass = <span class="keyword">true</span>;</span><br><span class="line">    <span class="comment">//经历一次外层循环最大的数到最后</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length-<span class="number">1</span> &amp;&amp; needNextPass;i++)&#123;</span><br><span class="line">        needNextPass = <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j =<span class="number">0</span>;j &lt; arr.length -i-<span class="number">1</span>;j++)&#123;</span><br><span class="line">            <span class="comment">//如果亮亮比较左边数均小于右边的数那说明已经排序好了,无须进行下一次遍历</span></span><br><span class="line">            <span class="keyword">if</span>(arr[j] &gt; arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">                <span class="keyword">int</span> tmp = arr[j];</span><br><span class="line">                arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">                arr[j+<span class="number">1</span>] = tmp;</span><br><span class="line">                needNextPass = <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wulimax.github.io/2019/09/16/docs/arithmetic/README/" data-id="ck0m2ip2t0007q4u12uswo5hx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/16/docs/HTTP/http/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/16/docs/1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/09/16/url/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/wx/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/wx/intercepto/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/TopN/README/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 wulimax<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

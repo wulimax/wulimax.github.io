@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="关于一次请求生命周期的思考1. DNS解析####什么是DNS解析？当用户输入一个网址并按下回车键的时候，浏览器得到了一个域名。而在实际通信过程中，我们需要的是一个IP地址。因此我们需要先把域名转换成相应的IP地址，这个过程称作DNS解析。 1) 浏览器首先搜索浏览器自身缓存的DNS记录。　　或许很多人不知道，浏览器自身也带有一层DNS缓存。Chrome 缓存1000条DNS解析结果，缓存时间大概">
+<meta name="keywords" content="php,java,javascript,node,go,lua,nginx,sphinx,elasticesarch,算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blogs">
+<meta property="og:url" content="https://wulimax.github.io/2019/09/16/docs/HTTP/http/index.html">
+<meta property="og:site_name" content="blogs">
+<meta property="og:description" content="关于一次请求生命周期的思考1. DNS解析####什么是DNS解析？当用户输入一个网址并按下回车键的时候，浏览器得到了一个域名。而在实际通信过程中，我们需要的是一个IP地址。因此我们需要先把域名转换成相应的IP地址，这个过程称作DNS解析。 1) 浏览器首先搜索浏览器自身缓存的DNS记录。　　或许很多人不知道，浏览器自身也带有一层DNS缓存。Chrome 缓存1000条DNS解析结果，缓存时间大概">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://wulimax.github.io/2019/09/16/docs/HTTP/http/1543479140109.png">
+<meta property="og:image" content="https://wulimax.github.io/2019/09/16/docs/HTTP/http/1543479675564.png">
+<meta property="og:updated_time" content="2019-05-13T10:25:59.002Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blogs">
+<meta name="twitter:description" content="关于一次请求生命周期的思考1. DNS解析####什么是DNS解析？当用户输入一个网址并按下回车键的时候，浏览器得到了一个域名。而在实际通信过程中，我们需要的是一个IP地址。因此我们需要先把域名转换成相应的IP地址，这个过程称作DNS解析。 1) 浏览器首先搜索浏览器自身缓存的DNS记录。　　或许很多人不知道，浏览器自身也带有一层DNS缓存。Chrome 缓存1000条DNS解析结果，缓存时间大概">
+<meta name="twitter:image" content="https://wulimax.github.io/2019/09/16/docs/HTTP/http/1543479140109.png">
+  
+    <link rel="alternate" href="/atom.xml" title="blogs" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">blogs</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wulimax.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-docs/HTTP/http" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/16/docs/HTTP/http/" class="article-date">
+  <time datetime="2019-09-16T07:05:47.580Z" itemprop="datePublished">2019-09-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="关于一次请求生命周期的思考"><a href="#关于一次请求生命周期的思考" class="headerlink" title="关于一次请求生命周期的思考"></a>关于一次请求生命周期的思考</h1><h2 id="1-DNS解析"><a href="#1-DNS解析" class="headerlink" title="1. DNS解析"></a>1. DNS解析</h2><p>####<em>什么是DNS解析？当用户输入一个网址并按下回车键的时候，浏览器得到了一个域名。而在实际通信过程中，我们需要的是一个IP地址。因此我们需要先把域名转换成相应的IP地址，这个过程称作DNS解析。</em></p>
+<h4 id="1-浏览器首先搜索浏览器自身缓存的DNS记录。"><a href="#1-浏览器首先搜索浏览器自身缓存的DNS记录。" class="headerlink" title="1) 浏览器首先搜索浏览器自身缓存的DNS记录。"></a>1) 浏览器首先搜索浏览器自身缓存的DNS记录。</h4><p>　　或许很多人不知道，浏览器自身也带有一层DNS缓存。Chrome 缓存1000条DNS解析结果，缓存时间大概在一分钟左右。</p>
+<p>　　（Chrome浏览器通过输入：chrome://net-internals/#dns 打开DNS缓存页面）</p>
+<h4 id="2-如果浏览器缓存中没有找到需要的记录或记录已经过期，则搜索hosts文件和操作系统缓存。"><a href="#2-如果浏览器缓存中没有找到需要的记录或记录已经过期，则搜索hosts文件和操作系统缓存。" class="headerlink" title="　　2) 如果浏览器缓存中没有找到需要的记录或记录已经过期，则搜索hosts文件和操作系统缓存。"></a>　　2) 如果浏览器缓存中没有找到需要的记录或记录已经过期，则搜索hosts文件和操作系统缓存。</h4><p>　　在Windows操作系统中，可以通过 ipconfig /displaydns 命令查看本机当前的缓存。</p>
+<p>　　通过hosts文件，你可以手动指定一个域名和其对应的IP解析结果，并且该结果一旦被使用，同样会被缓存到操作系统缓存中。</p>
+<p>　　Windows系统的hosts文件在%systemroot%\system32\drivers\etc下，linux系统的hosts文件在/etc/hosts下。</p>
+<h4 id="3-如果在hosts文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服务器发送解析请求。"><a href="#3-如果在hosts文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服务器发送解析请求。" class="headerlink" title="　　3) 如果在hosts文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服务器发送解析请求。"></a>　　3) 如果在hosts文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服务器发送解析请求。</h4><p>　　其实第一台被访问的域名解析服务器就是我们平时在设置中填写的DNS服务器一项，当操作系统缓存中也没有命中的时候，系统会向DNS服务器正式发出解析请求。这里是真正意义上开始解析一个未知的域名。</p>
+<p>　　一般一台域名解析服务器会被地理位置临近的大量用户使用（特别是ISP的DNS），一般常见的网站域名解析都能在这里命中。</p>
+<h4 id="4-如果域名解析服务器也没有该域名的记录，则开始递归-迭代解析。"><a href="#4-如果域名解析服务器也没有该域名的记录，则开始递归-迭代解析。" class="headerlink" title="　　4) 如果域名解析服务器也没有该域名的记录，则开始递归+迭代解析。"></a>　　4) 如果域名解析服务器也没有该域名的记录，则开始递归+迭代解析。</h4><p>　　这里我们举个例子，如果我们要解析的是mail.google.com。</p>
+<p>　　首先我们的域名解析服务器会向<strong>根域服务器</strong>（全球只有13台）发出请求。显然，仅凭13台服务器不可能把全球所有IP都记录下来。所以根域服务器记录的是com域服务器的IP、cn域服务器的IP、org域服务器的IP……。如果我们要查找.com结尾的域名，那么我们可以到com域服务器去进一步解析。所以其实这部分的域名解析过程是一个树形的搜索过程</p>
+<p><img src="./1543479140109.png" alt="1543479140109"></p>
+<p>  根域服务器告诉我们<strong>com域服务器</strong>的IP。</p>
+<p>　　接着我们的域名解析服务器会向<strong>com域服务器</strong>发出请求。根域服务器并没有mail.google.com的IP，但是却有<strong>google.com域服务器</strong>的IP。</p>
+<p>　　接着我们的域名解析服务器会向<strong>google.com域服务器</strong>发出请求。…</p>
+<p>　　如此重复，直到获得mail.google.com的IP地址。</p>
+<p>　　为什么是递归：问题由一开始的本机要解析mail.google.com变成域名解析服务器要解析mail.google.com，这是递归。</p>
+<p>　　为什么是迭代：问题由向根域服务器发出请求变成向com域服务器发出请求再变成向google.com域发出请求，这是迭代。</p>
+<p>​       为什么全球只有13台根服务器 : 因为UDP给ip只有512个字节要把13个根服务器存储进去</p>
+<h4 id="5-获取域名对应的IP后，一步步向上返回，直到返回给浏览器。"><a href="#5-获取域名对应的IP后，一步步向上返回，直到返回给浏览器。" class="headerlink" title="　　5) 获取域名对应的IP后，一步步向上返回，直到返回给浏览器。"></a>　　5) 获取域名对应的IP后，一步步向上返回，直到返回给浏览器。</h4><h2 id="2-补充一点CDN知识"><a href="#2-补充一点CDN知识" class="headerlink" title="2.补充一点CDN知识"></a>2.补充一点CDN知识</h2><h3 id="CDN-是什么"><a href="#CDN-是什么" class="headerlink" title="CDN 是什么"></a>CDN 是什么</h3><p>​       <strong>CDN</strong>（Content Delivery Network，内容分发网络），即全网内容加速服务。为了尽可能的避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定，由此，诞生了 CDN 加速服务。</p>
+<p>通过ip/为止找最近的 距离用户最近的资源服务器</p>
+<h2 id="3-建立tcp链接"><a href="#3-建立tcp链接" class="headerlink" title="3.建立tcp链接"></a>3.建立tcp链接</h2><p><img src="./1543479675564.png" alt="1543479675564"></p>
+<p>##4.服务端负载</p>
+<p>   根据自己公司的负载架构 指定具体某台服务器处理这次请求</p>
+<p>​    当网络不太好时TCP使用 拥塞控制 </p>
+<p>​     慢开始: 先探测 由小到大 逐渐增大网络包</p>
+<p>​    拥塞避免: 记录往返的RTT时间  计算发包时间大小</p>
+<p>   快重传 &amp;快恢复 : 收到网络包立刻恢复 不等数据返回稍带回复 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wulimax.github.io/2019/09/16/docs/HTTP/http/" data-id="ck0m2ip2p0004q4u12bgqqght" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/16/docs/HTTP/newhttp/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/16/docs/arithmetic/README/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/09/16/url/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/wx/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/wx/intercepto/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/TopN/README/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 wulimax<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

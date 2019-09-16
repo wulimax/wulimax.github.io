@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="var socketUrl = &apos;ws://127.0.0.1:3000&apos; //连接 var socket = io(socketUrl) 			    var oCanvas = document.querySelector(&apos;canvas&apos;) var ctx = oCanvas.getContext(&quot;2d&quot;) //创建画笔  var isDown = false //标记鼠标状态 true是">
+<meta name="keywords" content="php,java,javascript,node,go,lua,nginx,sphinx,elasticesarch,算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blogs">
+<meta property="og:url" content="https://wulimax.github.io/2019/09/16/docs/socket/app/index.html">
+<meta property="og:site_name" content="blogs">
+<meta property="og:description" content="var socketUrl = &apos;ws://127.0.0.1:3000&apos; //连接 var socket = io(socketUrl) 			    var oCanvas = document.querySelector(&apos;canvas&apos;) var ctx = oCanvas.getContext(&quot;2d&quot;) //创建画笔  var isDown = false //标记鼠标状态 true是">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-23T07:30:53.757Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blogs">
+<meta name="twitter:description" content="var socketUrl = &apos;ws://127.0.0.1:3000&apos; //连接 var socket = io(socketUrl) 			    var oCanvas = document.querySelector(&apos;canvas&apos;) var ctx = oCanvas.getContext(&quot;2d&quot;) //创建画笔  var isDown = false //标记鼠标状态 true是">
+  
+    <link rel="alternate" href="/atom.xml" title="blogs" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">blogs</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wulimax.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-docs/socket/app" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/16/docs/socket/app/" class="article-date">
+  <time datetime="2019-09-16T07:05:48.213Z" itemprop="datePublished">2019-09-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        var socketUrl = 'ws://127.0.0.1:3000' //连接
+var socket = io(socketUrl) 			  
+
+var oCanvas = document.querySelector('canvas')
+var ctx = oCanvas.getContext("2d") //创建画笔 
+var isDown = false //标记鼠标状态 true是按下时状态
+ // 随机颜色
+  var a = Math.floor(Math.random() * 255)
+  var b = Math.floor(Math.random() * 255)
+  var c = Math.floor(Math.random() * 255)
+  var color = 'rgb('+a+','+b+', '+c+')'
+
+  
+//接收后端消息
+socket.on('bedmsg',function(data){
+  console.log(data)
+  if(data.type == 'moveTo'){
+  	ctx.beginPath()
+  	ctx.strokeStyle = color
+  	ctx.moveTo(data.x,data.y)
+  }else{
+  	ctx.lineTo(data.x,data.y)
+  	ctx.stroke()
+  }
+})
+
+//发给后端
+//不希望服务器在发给我自己
+//socket.emit('fedmsg',{a:1,b:3})
+
+//通过canvas绘制的界面上的所有的点(moveTO,lineTo)
+//收到消息后将坐标绘制到canvas中
+
+
+
+//鼠标按下时放
+oCanvas.onmousedown = function(e){
+
+	isDown = true
+	ctx.beginPath() //清洗画笔
+	ctx.strokeStyle = color
+	ctx.moveTo(e.offsetX,e.offsetY)
+	socket.emit('fedmsg',{color:color,x:e.offsetX,y:e.offsetY,type:'moveTo'})
+}
+oCanvas.onmousemove = function(e){
+  if(isDown){
+  	ctx.lineTo(e.offsetX,e.offsetY)
+  	ctx.stroke()
+  	socket.emit('fedmsg',{x:e.offsetX,y:e.offsetY,type:'lineTo'})
+  }
+}
+
+oCanvas.onmouseup = function (e){
+    isDown = false
+}
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wulimax.github.io/2019/09/16/docs/socket/app/" data-id="ck0m2ip3w0017q4u19hd6m3mh" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/16/docs/socket/index/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/16/docs/redis/README/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/09/16/url/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/wx/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/wx/intercepto/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/16/docs/TopN/README/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 wulimax<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
