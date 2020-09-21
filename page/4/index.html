@@ -1,489 +1,1116 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	 
+	blog
+	</title>
+	
+	<!-- keywords,description -->
+	
+		<meta name="keywords" content="李正午，李政武，wulimax,博客，php,js,java,javascript,go,nginx,lua,swoole" />
+	 
+		<meta name="description" content="个人学习记录" />
+	
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
   
 
-  
-  <title>blogs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="坚持保持一颗好奇心">
-<meta name="keywords" content="php,java,javascript,node,go,lua,nginx,sphinx,elasticesarch,算法">
-<meta property="og:type" content="website">
-<meta property="og:title" content="blogs">
-<meta property="og:url" content="https://wulimax.github.io/page/4/index.html">
-<meta property="og:site_name" content="blogs">
-<meta property="og:description" content="坚持保持一颗好奇心">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="blogs">
-<meta name="twitter:description" content="坚持保持一颗好奇心">
-  
-    <link rel="alternate" href="/atom.xml" title="blogs" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-</html>
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 5.1.1"></head>
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">blogs</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wulimax.github.io"></form>
-      </div>
-    </div>
-  </div>
+	<header id="header">
+    <a id="title" href="/" class="logo">blog</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/" class="menu-item-link">首页</a>
+		</li>
+
+
+		<li class="menu-item">
+			<a href="https://wulimax.github.io/" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-docs/maxwell/ESaggs" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/maxwell/ESaggs/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.854Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="使用Elastsearch-实现聚合分析"><a href="#使用Elastsearch-实现聚合分析" class="headerlink" title="使用Elastsearch 实现聚合分析"></a>使用Elastsearch 实现聚合分析</h3><p>把sql  :</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>  字段<span class="number">1</span>,字段<span class="number">2</span>,字段<span class="number">3</span>,( <span class="keyword">sum</span>(字段<span class="number">4</span>) -<span class="keyword">sum</span>(字段<span class="number">5</span>)   ) <span class="keyword">as</span>  字段<span class="number">7</span>   <span class="keyword">FROM</span> tablname <span class="keyword">ORDER</span> 字段<span class="number">7</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">"aggs"</span>: &#123;</span><br><span class="line">   <span class="attr">"gropby_paytype"</span>: &#123;</span><br><span class="line">     <span class="attr">"terms"</span>: &#123;</span><br><span class="line">       <span class="attr">"field"</span>: <span class="string">"paytype"</span>,</span><br><span class="line">       <span class="attr">"order"</span>: &#123;</span><br><span class="line">         <span class="attr">"sum_money"</span>: <span class="string">"desc"</span></span><br><span class="line">       &#125;</span><br><span class="line">     &#125;,</span><br><span class="line">     <span class="attr">"aggs"</span>: &#123;</span><br><span class="line">       <span class="attr">"字段4"</span>: &#123;</span><br><span class="line">         <span class="attr">"sum"</span>: &#123;</span><br><span class="line">           <span class="attr">"field"</span>: <span class="string">"real_money"</span></span><br><span class="line">         &#125;</span><br><span class="line">       &#125;,</span><br><span class="line">       <span class="attr">"字段5"</span>: &#123;</span><br><span class="line">         <span class="attr">"sum"</span>: &#123;</span><br><span class="line">           <span class="attr">"field"</span>: <span class="string">"back_money"</span></span><br><span class="line">         &#125;</span><br><span class="line">       &#125;,</span><br><span class="line">       <span class="attr">"字段7"</span>: &#123;</span><br><span class="line">         <span class="attr">"bucket_script"</span>: &#123;</span><br><span class="line">           <span class="attr">"buckets_path"</span>: &#123;</span><br><span class="line">             <span class="attr">"event_a"</span>: <span class="string">"字段4"</span>,</span><br><span class="line">             <span class="attr">"event_b"</span>: <span class="string">"字段5"</span></span><br><span class="line">           &#125;,</span><br><span class="line">           <span class="attr">"script"</span>: <span class="string">"params.event_a - params.event_b"</span></span><br><span class="line">         &#125;</span><br><span class="line">       &#125;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;,</span><br><span class="line"> <span class="attr">"_source"</span>:[<span class="string">"字段1"</span>,<span class="string">"字段2"</span>,<span class="string">"字段3"</span>]   </span><br><span class="line"> <span class="string">"size"</span>: <span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
+			
 
-<p>ES 从6.3版本开始支持SQL语法 我们可以直接在用SQL查询索引  <a href="https://www.elastic.co/cn/blog/elasticsearch-6-3-0-released" target="_blank" rel="noopener">ES SQL</a></p>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Elastsearch
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/Elastsearch/ES%E5%A4%8D%E6%9D%82%E8%81%9A%E5%90%88%E6%93%8D%E4%BD%9C/">
+										ES复杂聚合操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/Elastsearch/%E5%B0%81%E8%A3%85%E7%9A%84es%E6%93%8D%E4%BD%9C%E7%B1%BB/">
+										封装的es操作类
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										HTTP
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/HTTP/http/">
+										http
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/HTTP/newhttp/">
+										newhttp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/index/">
+										index
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										java
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/AVLTree/">
+										AVLTree
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/Linkedlist/">
+										Linkedlist
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/StringLength/">
+										StringLength
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/Treemp/">
+										Treemp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/arraylist/">
+										arraylist
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/authcode/">
+										authcode
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/bin2hex/">
+										bin2hex
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/netty/">
+										netty
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/wxcode/">
+										wxcode
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										javascript
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/javascript/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/javascript/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%B8%8B%E6%8B%89%E5%8A%A0%E8%BD%BD/">
+										移动端下拉加载
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										liunx
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/liunx/IO%E6%A8%A1%E5%9E%8B/">
+										IO模型
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/liunx/liunx%E5%9F%BA%E7%A1%80/">
+										liunx基础
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/liunx/%E9%9B%B6%E6%8B%B7%E8%B4%9D/">
+										零拷贝
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										maxwell
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/maxwell/maxwell%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5/">
+										maxwell数据同步
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										mysql
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/Explain%E6%98%AF%E4%BB%80%E4%B9%88/">
+										Explain是什么
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/MySQL%E4%BC%98%E5%8C%96/">
+										MySQL优化
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/Mysql%E4%BA%8B%E5%8A%A1/">
+										Mysql事务
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/mysql%20%E6%89%A7%E8%A1%8C%E6%AD%A5%E9%AA%A4/">
+										mysql 执行步骤
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/mysql_innodb/">
+										mysql_innodb
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/mysql/">
+										mysql
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										php
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/lru/">
+										lru
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/post_url/">
+										post_url
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">
+										图片压缩失败问题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/">
+										数据库连接
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E9%92%89%E9%92%89%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/">
+										钉钉消息推送
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E9%AB%98%E4%BD%8E%E4%BD%8D%E9%97%AE%E9%A2%98/">
+										高低位问题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										python
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/python/%E5%BE%AE%E4%BF%A1%E8%87%AA%E5%8A%A8%E8%81%8A%E5%A4%A9/">
+										微信自动聊天
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/python/%E7%88%AC%E5%8F%96tapd/">
+										爬取tapd
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										redis
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/redis/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/redis/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/">
+										事件处理
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										sphinx
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/sphinx/PHP-sphinx%E6%93%8D%E4%BD%9C/">
+										PHP-sphinx操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										websocket
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/app/">
+										app
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/index/">
+										index
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/socketFn/">
+										socketFn
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										其他
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%85%B6%E4%BB%96/go%E8%BF%9B%E8%A1%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">
+										go进行反向代理
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%85%B6%E4%BB%96/%E4%BD%BF%E7%94%A8openv%E8%BF%9B%E8%A1%8C%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">
+										使用openv进行人脸识别
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										基础知识
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E4%B8%8E%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/">
+										事件驱动与异步编程
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										小程序
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8B%A6%E6%88%AA%E7%99%BB%E9%99%86/">
+										小程序拦截登陆
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E8%80%81%E7%89%88%E6%9C%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8B%A6%E6%88%AA%E5%99%A8/">
+										老版本小程序拦截器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E6%94%B6%E8%97%8F%E7%9A%84%E7%BD%91%E7%AB%99/">
+										收藏的网站
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										算法
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/TopN%E6%80%9D%E8%B7%AF/">
+										TopN思路
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-lru/">
+										leetcode-lru
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/">
+										leetcode-两数相加
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E6%89%BE%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9C%80%E5%B0%8F%E6%95%B0/">
+										leetcode-找数组中最小数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E6%9C%80%E5%A4%A7%E7%9F%A9%E5%BD%A2/">
+										leetcode-最大矩形
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E6%AD%A3%E5%88%99%E6%90%9C%E7%B4%A2/">
+										leetcode-正则搜索
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E8%BD%A6%E7%9A%84%E5%8F%AF%E7%94%A8%E6%8D%95%E8%8E%B7%E9%87%8F/">
+										leetcode-车的可用捕获量
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E8%BF%94%E5%9B%9E%E4%B8%8B%E6%A0%87/">
+										leetcode-返回下标
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E9%A4%90%E7%9B%98%E6%A0%88/">
+										leetcode-餐盘栈
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/lettcode-%E6%9F%B1%E7%8A%B6%E5%9B%BE%E4%B8%AD%E6%9C%80%E5%A4%A7%E7%9A%84%E7%9F%A9%E5%BD%A2/">
+										lettcode-柱状图中最大的矩形
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E5%8E%BB%E9%87%8D/">
+										去重
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E6%89%BE%E4%B8%AD%E4%BD%8D%E6%95%B0/">
+										找中位数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/">
+										排序
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/">
+										斐波那契数列
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/maxwell/ESaggs/" data-id="ck0m2ip3c000nq4u1q5zw8i7f" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+	<!-- 引入正文 -->
+	<div id="content">
+		<div id="index">
+	
+		<div class="index-li">
+			<a href="/2020/09/21/php/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/">
+				<h2 class="index-title">
+					数据库连接
+				</h2>
+				<div class="index-brief">
+					使用PHP PDO 连接
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/php/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">
+				<h2 class="index-title">
+					图片压缩失败问题
+				</h2>
+				<div class="index-brief">
+					GD问题​       公司同事反馈说我们的后台,经常图片上传失败  http状态码报500
+​         第一阶段 : 哥们第一反应就是 他网不好让他换wifi
+​         第二阶段: 格式不对 , 自己在后台加入 流判断
+​         第三阶段: 图片太大 压缩一下
+​   
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/php/README/">
+				<h2 class="index-title">
+					README
+				</h2>
+				<div class="index-brief">
+					PHP相关问题1.一次排查GD问题记录;
+2.swoole基础知识;
+3.lru算法基本思路;
+4.钉钉消息推送功能
+5.单例数据库链接类
+5.php请求方法
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/php/post_url/">
+				<h2 class="index-title">
+					post_url
+				</h2>
+				<div class="index-brief">
+					PHP请求方法12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/php/lru/">
+				<h2 class="index-title">
+					lru
+				</h2>
+				<div class="index-brief">
+					PHP实现lru算法1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950/**使用PHP实现lru 算法 删除最长最少*/class LruCache&#123;    
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/mysql/README/">
+				<h2 class="index-title">
+					README
+				</h2>
+				<div class="index-brief">
+					数据库
+
+构建mysql知识网络
+1.mysql优化思路;
+2.mysql 执行流程;
+3.mysql 事物;
+4.mysql 日志;
+5.innodb引擎;
+6.Explain;
+7.记一次死锁分析记录
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/mysql/MySQL%E4%BC%98%E5%8C%96/">
+				<h2 class="index-title">
+					MySQL优化
+				</h2>
+				<div class="index-brief">
+					MySQL优化框架
+ 
+
+SQL语句优化
+索引优化
+数据库结构优化
+InnoDB表优化
+MyISAM表优化
+Memory表优化
+理解查询执行计划
+缓冲和缓存
+锁优化
+MySQL服务器优化
+性能评估
+MySQL优化内幕
+
+MySQL优化需要在三个不同层次上协调进行：MySQL级别、OS级别和硬件级别。
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/mysql/Mysql%E4%BA%8B%E5%8A%A1/">
+				<h2 class="index-title">
+					Mysql事务
+				</h2>
+				<div class="index-brief">
+					MySQL事物底层原理
+事物日志：顺序I/O
+顺序文件：随机I/O
+事物的状态：
+​            Active：事务的初始状态，表示事务正在执行；​            Partially Commited：在最后一条语句执行之后；​            Failed：发现事务无法正常
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/mysql/mysql_innodb/">
+				<h2 class="index-title">
+					mysql_innodb
+				</h2>
+				<div class="index-brief">
+					innodb具有高并发, 事物 ,数据安全等特性1.二叉树 平衡树 多叉树
+首先我们先了解一下树的概念: 
 
 
-  
-    <article id="post-docs/liunx/zcopy" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/liunx/zcopy/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.839Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="零拷贝"><a href="#零拷贝" class="headerlink" title="零拷贝"></a>零拷贝</h1><p>liunx 磁盘io流程</p>
-<p>磁盘 -&gt; 磁盘cache -|-&gt; IO驱动层 -&gt; 系统内核内核buffer/cache -|-&gt;  系统调用 write() -&gt; 用户内核buffter   </p>
-<p>###传统的IO会触发四次拷贝  read + write </p>
-<p>① 发出read系统调用：导致用户空间到内核空间的上下文切换(第一次上下文切换)。通过DMA引擎将文件中的数据从磁盘上读取到内核空间缓冲区(第一次拷贝: hard drive ——&gt; kernel buffer)。<br> ② 将内核空间缓冲区的数据拷贝到用户空间缓冲区(第二次拷贝: kernel buffer ——&gt; user buffer)，然后read系统调用返回。而系统调用的返回又会导致一次内核空间到用户空间的上下文切换(第二次上下文切换)。<br> ③ 发出write系统调用：导致用户空间到内核空间的上下文切换(第三次上下文切换)。将用户空间缓冲区中的数据拷贝到内核空间中与socket相关联的缓冲区中(即，第②步中从内核空间缓冲区拷贝而来的数据原封不动的再次拷贝到内核空间的socket缓冲区中。)(第三次拷贝: user buffer ——&gt; socket buffer)。<br> ④ write系统调用返回，导致内核空间到用户空间的再次上下文切换(第四次上下文切换)。通过DMA引擎将内核缓冲区中的数据传递到协议引擎(第四次拷贝: socket buffer ——&gt; protocol engine)，这次拷贝是一个独立且异步的过程。</p>
-<p><strong>传统的I/O操作进行了4次用户空间与内核空间的上下文切换，以及4次数据拷贝。其中4次数据拷贝中包括了2次DMA拷贝和2次CPU拷贝</strong></p>
-<p><strong>DMA</strong><br> DMA(Direct Memory Access) ———— 直接内存访问 ：DMA是允许外设组件将I/O数据直接传送到主存储器中并且传输不需要CPU的参与，以此将CPU解放出来去完成其他的事情。<br> 而用户空间与内核空间之间的数据传输并没有类似DMA这种可以不需要CPU参与的传输工具，因此用户空间与内核空间之间的数据传输是需要CPU全程参与的。所有也就有了通过零拷贝技术来减少和避免不必要的CPU数据拷贝过程</p>
-<p>###零拷贝的意思不是真正的零拷贝 而是尽可能的减少拷贝的次数  mmap + write</p>
-<p>① 发出sendfile系统调用，导致用户空间到内核空间的上下文切换(第一次上下文切换)。通过DMA引擎将磁盘文件中的内容拷贝到内核空间缓冲区中(第一次拷贝: hard drive ——&gt; kernel buffer)。<br> ② 没有数据拷贝到socket缓冲区。取而代之的是只有相应的描述符信息会被拷贝到相应的socket缓冲区当中。该描述符包含了两方面的信息：a)kernel buffer的内存地址；b)kernel buffer的偏移量。<br> ③ sendfile系统调用返回，导致内核空间到用户空间的上下文切换(第二次上下文切换)。DMA gather copy根据socket缓冲区中描述符提供的位置和偏移量信息直接将内核空间缓冲区中的数据拷贝到协议引擎上(第二次拷贝: kernel buffer ——&gt; protocol engine)，这样就避免了最后一次CPU数据拷贝。</p>
-<p><strong>总的来说，带有DMA收集拷贝功能的sendfile实现的I/O只使用了2次用户空间与内核空间的上下文切换，以及2次数据的拷贝，而且这2次的数据拷贝都是非CPU拷贝。这样一来我们就实现了最理想的零拷贝I/O传输了，不需要任何一次的CPU拷贝，以及最少的上下文切换</strong></p>
-<p>​            从代码层面上看，从硬盘上将文件读入内存，都要经过文件系统进行数据拷贝，并且数据拷贝操作是由文件系统和硬件驱动实现的，理论上来说，拷贝数据的效率是一样的。但是通过内存映射的方法访问硬盘上的文件，效率要比read和write系统调用高，这是为什么呢？原因是read()是系统调用，其中进行了数据拷贝，它首先将文件内容从硬盘拷贝到内核空间的一个缓冲区；而mmap()也是系统调用，如前所述，mmap()中没有进行数据拷贝，真正的数据拷贝是在缺页中断处理时进行的，由于mmap()将文件直接映射到用户空间，所以中断处理函数根据这个映射关系，直接将文件从硬盘拷贝到用户空间，只进行了 一次数据拷贝 。因此，内存映射的效率要比read/write效率高。</p>
-<h2 id="缺页中断"><a href="#缺页中断" class="headerlink" title="缺页中断"></a>缺页中断</h2><p>​            缺页中断就是要访问的页不在主存，需要操作系统将其调入主存后再进行访问。在这个时候，被内存映射的文件实际上成了一个分页交换文件</p>
-<p>​              缺页中断在这最主要的作用是如果零拷贝时 找不到映射 数据 就通过系统主动把数据刷入内存 , 淘汰 不要使用的数据 交换进swap 把需要的数据刷进内存</p>
+二叉搜索树的特点是：每个节点的左儿子小于父节点，父节点又小于右儿子。这样如果你要查 ID_card_n2 的话，按照图中的搜索顺序就是按照 UserA -&gt; UserC -&gt; 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/mysql/mysql/">
+				<h2 class="index-title">
+					mysql
+				</h2>
+				<div class="index-brief">
+					mysql执行流程
+关系模型：(结构化数据模型)
+关系模型
+实体-关系模型
+对象关系模型：基于对象的数据模型
+半结构化数据模型：XML(扩展标记语言)
+Jerry
+50
+gender:
+name:    uid:    birthdate:
+name:age:gender
+name:uid:birt
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+	
+	<div id="index-paginator">
+		
+			<a class="extend prev" rel="prev" href="/page/3/">&lt;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/5/">&gt;</a>
+		
+	</div>
+</div>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/liunx/zcopy/" data-id="ck0m2ip3b000mq4u1n6lbua7e" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+	</div>
+	<div id="footer">
+	<p>
+	©2017-<span id="footerYear"></span>
+	<a href="/">li zhengwu</a>
 
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv">
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="https://wulimax.github.io/" target="_blank">Tree</a>
+	by <a href="https://github.com/wulimax/blogs" target="_blank">wulimax</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript">
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
 
-  
-    <article id="post-docs/liunx/README" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/liunx/README/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.838Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="liunx"><a href="#liunx" class="headerlink" title="liunx"></a>liunx</h1><p> <a href="https://github.com/wulimax/blogs/blob/master/docs/liunx/liunx_IO.md" target="_blank" rel="noopener">liunx IO 模型</a></p>
-<p><a href="https://github.com/wulimax/blogs/blob/master/docs/liunx/zcopy.md" target="_blank" rel="noopener">零拷贝&amp; 缺页中断</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/liunx/README/" data-id="ck0m2ip39000kq4u1ckm0rfdj" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/liunx/liunx_IO" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/liunx/liunx_IO/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.831Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>liunx 中存在五种IO模型</p>
-<p>阻塞    同步非阻塞     IO多路复用  信号驱动IO  异步IO</p>
-<p>liunx 磁盘io流程</p>
-<p>磁盘 -&gt; 磁盘cache -|-&gt; IO驱动层 -&gt; 系统内核内核buffer/cache -|-&gt;  系统调用 write() -&gt; 用户内核buffter   </p>
-<h3 id="阻塞IO"><a href="#阻塞IO" class="headerlink" title="阻塞IO"></a>阻塞IO</h3><p>​          当用户进程进行系统调用时，内核就开始了I/O的第一个阶段，准备数据到缓冲区中，当数据都准备完成后，则将数据从内核缓冲区中拷贝到用户进程的内存中，这时用户进程才解除block的状态重新运行</p>
-<p>​        阻塞IO可以及时的返回数据 , 但是性能不高</p>
-<h3 id="同步非阻塞"><a href="#同步非阻塞" class="headerlink" title="同步非阻塞"></a>同步非阻塞</h3><p>​        通过不断轮询方式解决 , 查看数据是否准备好</p>
-<pre><code>拷贝数据的整个过程，进程仍然是阻塞的;需要不断询问数据是否准备好了;能够在等待任务完成的过程中处理其他事件由于需要轮询，所以延迟会增加</code></pre><h3 id="IO多路复用"><a href="#IO多路复用" class="headerlink" title="IO多路复用"></a>IO多路复用</h3><p>​       IO 多路复用技术分 三个阶段 select , poll , epoll  可以想象成 多路复用技术把直接操作IO 封装成了一个 代理通过代理访问</p>
-<p>​         select :</p>
-<p>​     1.单个进程能够监视的文件描述符的数量存在最大限制，通常是1024，当然可以更改数量，但由于select采用轮询的方式扫描文件描述符，文件描述符数量越多，性能越差；(在linux内核头文件中，有这样的定义：#define __FD_SETSIZE    1024)</p>
-<p>​    2.内核 / 用户空间内存拷贝问题，select需要复制大量的句柄数据结构，产生巨大的开销；</p>
-<ol start="3">
-<li>select返回的是含有整个句柄的数组，应用程序需要遍历整个数组才能发现哪些句柄发生了事件；</li>
-</ol>
-<p>​    3 select的触发方式是水平触发，应用程序如果没有完成对一个已经就绪的文件描述符进行IO操作，那么之后每次select调用还是会将这些文件描述符通知进程。</p>
-<p>poll : </p>
-<p>​     为了解决文件限制的问题就有了poll , poll使用链表解决文件描述符的问题, 虽然解决了文件限制问题但是后三个问题依然存在</p>
-<p>epoll: </p>
-<p>​        epoll 通过红黑树保存监听信息 , 使用水平触发 和边缘触发的方式 来返回数据</p>
-<p>​       水平触发 :  当被监控的文件描述符上有可读写事件发生时，epoll_wait()会通知处理程序去读写。如果这次没有把数据一次性全部读写完(如读写缓冲区太小)，那么下次调用 epoll_wait()时，它还会通知你在上没读写完的文件描述符上继续读写，当然如果你一直不去读写，它会一直通知你！！！如果系统中有大量你不需要读写的就绪文件描述符，而它们每次都会返回，这样会大大降低处理程序检索自己关心的就绪文件描述符的效率！</p>
-<pre><code>边缘触发 : 被监控的文件描述符上有可读写事件发生时，epoll_wait()会通知处理程序去读写。如果这次没有把数据全部读写完(如读写缓冲区太小)，那么下次调用epoll_wait()时，它不会通知你，也就是它只会通知你一次，直到该文件描述符上出现第二次可读写事件才会通知你！！！这种模式比水平触发效率高，系统不会充斥大量你不关心的就绪文件描述符</code></pre><p>​       epoll()模型即支持水平触发，也支持边缘触发，默认是水平触发</p>
-<h3 id="信号驱动IO是边缘触发模式"><a href="#信号驱动IO是边缘触发模式" class="headerlink" title="信号驱动IO是边缘触发模式"></a>信号驱动IO是边缘触发模式</h3><h3 id="异步IO"><a href="#异步IO" class="headerlink" title="异步IO"></a>异步IO</h3><p>​            IO 操作都在内核层完成 不用去轮询查看了 直接回调到指定的接口就行了</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/liunx/liunx_IO/" data-id="ck0m2ip3a000lq4u1yrsikn2c" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/javascript/scroll" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/javascript/scroll/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.818Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>移动端下拉加载</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//异步加载</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getScrollTop</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> scrollTop = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">document</span>.documentElement &amp;&amp; <span class="built_in">document</span>.documentElement.scrollTop) &#123;</span><br><span class="line">            scrollTop = <span class="built_in">document</span>.documentElement.scrollTop;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">document</span>.body) &#123;</span><br><span class="line">            scrollTop = <span class="built_in">document</span>.body.scrollTop;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> scrollTop;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//获取屏幕高度</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getClientHeight</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> clientHeight = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">document</span>.body.clientHeight &amp;&amp; <span class="built_in">document</span>.documentElement.clientHeight) &#123;</span><br><span class="line">            clientHeight = <span class="built_in">Math</span>.min(<span class="built_in">document</span>.body.clientHeight, <span class="built_in">document</span>.documentElement.clientHeight);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            clientHeight = <span class="built_in">Math</span>.max(<span class="built_in">document</span>.body.clientHeight, <span class="built_in">document</span>.documentElement.clientHeight);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> clientHeight;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//获取文档高度</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getScrollHeight</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Math</span>.max(<span class="built_in">document</span>.body.scrollHeight, <span class="built_in">document</span>.documentElement.scrollHeight);</span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//获取屏幕宽度</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getScrollwidth</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> $(<span class="built_in">window</span>).width();</span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//获取屏幕高度</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getScrollheight</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> $(<span class="built_in">window</span>).height();</span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//获取当前手机类型</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getphonetype</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> ua = navigator.userAgent.split(<span class="string">"("</span>)[<span class="number">1</span>].split(<span class="string">")"</span>)[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">var</span> brand = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">var</span> phone = [<span class="regexp">/IPHONE/gi</span>, /huawei/gi, /mi/gi, /vivo/gi, /OPPO/gi, /samsung/gi, /SONY/gi, /Nokia/gi, /HTC/gi, /ZTE/gi, /Lenovo/gi, /ZUK/gi,]</span><br><span class="line">        <span class="keyword">if</span> (phone[<span class="number">0</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"iPhone"</span>;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">1</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"HUAWEI"</span>;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">2</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"小米"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">3</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"vivo"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">4</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"OPPO"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">5</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"SAMSUNG"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">6</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"SONY"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">7</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"Nokia"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">8</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"HTC"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">9</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"ZTE"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (phone[<span class="number">10</span>].test(ua) || phone[<span class="number">11</span>].test(ua)) &#123;</span><br><span class="line">            brand = <span class="string">"Lenovo"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            brand = <span class="string">"Android"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> lock = <span class="literal">true</span>;</span><br><span class="line"><span class="comment">//判断使用 touchmove 还是 scroll </span></span><br><span class="line">  <span class="comment">//因为 scroll在苹果x 和 荣耀v20上表现不佳所以才加入了 touchmove</span></span><br><span class="line">  <span class="comment">//因为touchmove 比较频所以加入抖动控制</span></span><br><span class="line">    <span class="keyword">if</span>(getphonetype() || (getScrollwidth()&gt;<span class="number">370</span> &amp;&amp; getScrollwidth()&lt;<span class="number">380</span> &amp;&amp; getScrollheight()&gt;<span class="number">810</span> &amp;&amp; getScrollheight()&lt;<span class="number">820</span>))&#123;</span><br><span class="line">        $(<span class="string">'body'</span>).on(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="built_in">Math</span>.ceil(getScrollTop() + getClientHeight()) == getScrollHeight() || getScrollHeight()<span class="number">-100</span>  &lt; getScrollTop() + getClientHeight()) &#123;</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">parseInt</span>($(<span class="string">'#loaded'</span>).data(<span class="string">'page'</span>)) != <span class="number">0</span>)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(lock == <span class="literal">false</span>)&#123;<span class="keyword">return</span>; &#125;</span><br><span class="line">                    lock = <span class="literal">false</span>;</span><br><span class="line">                    asloading($(<span class="string">'#loaded'</span>).data(<span class="string">'page'</span>),$(<span class="string">'#loaded'</span>).data(<span class="string">'type'</span>))</span><br><span class="line">                    <span class="keyword">var</span> timename=setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                        lock = <span class="literal">true</span>;</span><br><span class="line">                        clearInterval(timename);</span><br><span class="line">                    &#125;,<span class="number">500</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">window</span>.onscroll = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="built_in">Math</span>.ceil(getScrollTop() + getClientHeight()) == getScrollHeight() || getScrollHeight()<span class="number">-1</span>  &lt; getScrollTop() + getClientHeight()) &#123;</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">parseInt</span>($(<span class="string">'#loaded'</span>).data(<span class="string">'page'</span>)) != <span class="number">0</span>)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(lock == <span class="literal">false</span>)&#123;<span class="keyword">return</span>; &#125;</span><br><span class="line">                    lock = <span class="literal">false</span>;</span><br><span class="line">                    asloading($(<span class="string">'#loaded'</span>).data(<span class="string">'page'</span>),$(<span class="string">'#loaded'</span>).data(<span class="string">'type'</span>))</span><br><span class="line">                    <span class="keyword">var</span> timename=setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                        lock = <span class="literal">true</span>;</span><br><span class="line">                        clearInterval(timename);</span><br><span class="line">                    &#125;,<span class="number">500</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(getScrollHeight())</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>[参考文档][<a href="http://blog.hooperui.com/%E5%85%B3%E4%BA%8Eios%E8%AE%BE%E5%A4%87window-onscroll%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%BB%9A%E5%8A%A8%E4%BA%8B%E4%BB%B6%E4%B8%8D%E8%A7%A6%E5%8F%91%E7%9A%84%E9%97%AE%E9%A2%98/]" target="_blank" rel="noopener">http://blog.hooperui.com/%E5%85%B3%E4%BA%8Eios%E8%AE%BE%E5%A4%87window-onscroll%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%BB%9A%E5%8A%A8%E4%BA%8B%E4%BB%B6%E4%B8%8D%E8%A7%A6%E5%8F%91%E7%9A%84%E9%97%AE%E9%A2%98/]</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/javascript/scroll/" data-id="ck0m2ip38000jq4u10sbblx5o" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/javascript/README" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/javascript/README/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.816Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://github.com/wulimax/blogs/blob/master/docs/javascript/scroll.md" target="_blank" rel="noopener">1.移动端下拉加载</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/javascript/README/" data-id="ck0m2ip37000iq4u1f8atsquf" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/java/wxcode" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/java/wxcode/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.801Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="微信解密方法"><a href="#微信解密方法" class="headerlink" title="微信解密方法"></a>微信解密方法</h2><p>​    获取用户流程  小程序/公众号 </p>
-<p>  前端获取code ,跟加密后的数据, 使用code 去腾讯后台获取解密 数据的key ,但是比较坑的是官方没有提供java版本的解密方法 ,只有c++,php,node,python的</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">WXBizDataCrypt</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $appid;</span><br><span class="line">	<span class="keyword">private</span> $sessionKey;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 构造函数</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> $sessionKey string 用户在小程序登录后获取的会话密钥</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> $appid string 小程序的appid</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span><span class="params">( $appid, $sessionKey)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">$this</span>-&gt;sessionKey = $sessionKey;</span><br><span class="line">		<span class="keyword">$this</span>-&gt;appid = $appid;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 检验数据的真实性，并且获取解密后的明文.</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> $encryptedData string 加密的用户数据</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> $iv string 与用户数据一同返回的初始向量</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> $data string 解密后的原文</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span> int 成功0，失败返回对应的错误码</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">decryptData</span><span class="params">( $encryptedData, $iv)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (strlen(<span class="keyword">$this</span>-&gt;sessionKey) != <span class="number">24</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">41001</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		$aesKey=base64_decode(<span class="keyword">$this</span>-&gt;sessionKey);</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line">		<span class="keyword">if</span> (strlen($iv) != <span class="number">24</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">41002</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		$aesIV=base64_decode($iv);</span><br><span class="line"></span><br><span class="line">		$aesCipher=base64_decode($encryptedData);</span><br><span class="line"></span><br><span class="line">		$result=openssl_decrypt( $aesCipher, <span class="string">"AES-128-CBC"</span>, $aesKey, <span class="number">1</span>, $aesIV);</span><br><span class="line"></span><br><span class="line">		$dataObj=json_decode( $result );</span><br><span class="line">		<span class="keyword">if</span>( $dataObj  == <span class="keyword">NULL</span> )</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">41003</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>( $dataObj-&gt;watermark-&gt;appid != <span class="keyword">$this</span>-&gt;appid )</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">41003</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		$data = $result;</span><br><span class="line">		<span class="keyword">return</span> $data;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WxDecrytUtils</span> </span>&#123;</span><br><span class="line">    <span class="comment">//----------------------------微信解密------------------</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">decrypt</span><span class="params">(String encryptedData, String sessionKey, String iv)</span>  </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Cipher cipher = Cipher.getInstance(<span class="string">"AES/CBC/NoPadding"</span>);</span><br><span class="line">            BASE64Decoder base64Decoder = <span class="keyword">new</span> BASE64Decoder();</span><br><span class="line">            <span class="keyword">byte</span>[] _encryptedData = base64Decoder.decodeBuffer(encryptedData);</span><br><span class="line">            <span class="keyword">byte</span>[] _sessionKey = base64Decoder.decodeBuffer(sessionKey);</span><br><span class="line">            <span class="keyword">byte</span>[] _iv = base64Decoder.decodeBuffer(iv);</span><br><span class="line">            SecretKeySpec secretKeySpec = <span class="keyword">new</span> SecretKeySpec(_sessionKey, <span class="string">"AES"</span>);</span><br><span class="line">            IvParameterSpec ivParameterSpec = <span class="keyword">new</span> IvParameterSpec(_iv);</span><br><span class="line">            cipher.init(Cipher.DECRYPT_MODE, secretKeySpec, ivParameterSpec);</span><br><span class="line">            <span class="keyword">byte</span>[] original = cipher.doFinal(_encryptedData);</span><br><span class="line">            <span class="keyword">byte</span>[] bytes = decode(original);</span><br><span class="line">            String originalString = <span class="keyword">new</span> String(bytes, <span class="string">"UTF-8"</span>);</span><br><span class="line">            <span class="keyword">return</span> originalString;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception ex) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">        Charset CHARSET = Charset.forName(<span class="string">"utf-8"</span>);</span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">int</span> BLOCK_SIZE = <span class="number">32</span>;</span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 获得对明文进行补位填充的字节.</span></span><br><span class="line"><span class="comment">         *</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@param</span> count 需要进行填充补位操作的明文字节个数</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@return</span> 补齐用的字节数组</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">       <span class="keyword">private</span>  <span class="keyword">byte</span>[] encode(<span class="keyword">int</span> count) &#123;</span><br><span class="line">            <span class="comment">// 计算需要填充的位数</span></span><br><span class="line">            <span class="keyword">int</span> amountToPad = BLOCK_SIZE - (count % BLOCK_SIZE);</span><br><span class="line">            <span class="keyword">if</span> (amountToPad == <span class="number">0</span>) &#123;</span><br><span class="line">                amountToPad = BLOCK_SIZE;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 获得补位所用的字符</span></span><br><span class="line">            <span class="keyword">char</span> padChr = chr(amountToPad);</span><br><span class="line">            String tmp = <span class="keyword">new</span> String();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> index = <span class="number">0</span>; index &lt; amountToPad; index++) &#123;</span><br><span class="line">                tmp += padChr;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> tmp.getBytes(CHARSET);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 删除解密后明文的补位字符</span></span><br><span class="line"><span class="comment">         *</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@param</span> decrypted 解密后的明文</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@return</span> 删除补位字符后的明文</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">byte</span>[] decode(<span class="keyword">byte</span>[] decrypted) &#123;</span><br><span class="line">            <span class="keyword">int</span> pad = (<span class="keyword">int</span>) decrypted[decrypted.length - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span> (pad &lt; <span class="number">1</span> || pad &gt; <span class="number">32</span>) &#123;</span><br><span class="line">                pad = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> Arrays.copyOfRange(decrypted, <span class="number">0</span>, decrypted.length - pad);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 将数字转化成ASCII码对应的字符，用于对明文进行补码</span></span><br><span class="line"><span class="comment">         *</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@param</span> a 需要转化的数字</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@return</span> 转化得到的字符</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="function"><span class="keyword">private</span>  <span class="keyword">char</span> <span class="title">chr</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">byte</span> target = (<span class="keyword">byte</span>) (a &amp; <span class="number">0xFF</span>);</span><br><span class="line">            <span class="keyword">return</span> (<span class="keyword">char</span>) target;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/java/wxcode/" data-id="ck0m2ip35000gq4u1x1ldju1y" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/java/Treemp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/java/Treemp/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.794Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>二分映射树</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BSTMap</span>&lt;<span class="title">K</span> <span class="keyword">extends</span> <span class="title">Comparable</span>&lt;<span class="title">K</span>&gt; ,<span class="title">V</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">Node</span></span>&#123;</span><br><span class="line">        <span class="keyword">public</span> K key;</span><br><span class="line">        <span class="keyword">public</span> V value;</span><br><span class="line">        <span class="keyword">public</span> Node left,right;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span> <span class="params">(K key,V value)</span></span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.key = key;</span><br><span class="line">            <span class="keyword">this</span>.value = value;</span><br><span class="line">            <span class="keyword">this</span>.left = <span class="keyword">null</span>;</span><br><span class="line">            <span class="keyword">this</span>.right = <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> Node  root;</span><br><span class="line">    <span class="keyword">private</span>  <span class="keyword">int</span> size;</span><br><span class="line">   <span class="comment">/*构造方法*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BSTMap</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.root = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">this</span>.size = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> <span class="keyword">this</span>.size; &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.size==<span class="number">0</span>; &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(K key,V value)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.root = add(root,key,value);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> Node <span class="title">add</span><span class="params">(Node node, K key, V value)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">this</span>.size++;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Node(key,value);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(key.compareTo(node.key) &lt; <span class="number">0</span>)&#123;</span><br><span class="line">            node.left =   add(node.left,key,value);</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(key.compareTo(node.key) &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            node.right =   add(node.right,key,value);</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            node.value = value;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span>  node;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 查询</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> node</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> Node <span class="title">getNode</span> <span class="params">(Node node ,K key)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>) <span class="keyword">return</span>  <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">if</span>(key.compareTo(node.key) == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span>  node;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(key.compareTo(node.key) &lt;<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> getNode(node.left,key);</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> getNode(node.right,key);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(K key)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> getNode(<span class="keyword">this</span>.root,key) != <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> V <span class="title">get</span><span class="params">(K key)</span></span>&#123;</span><br><span class="line">        Node node  = getNode(<span class="keyword">this</span>.root,key);</span><br><span class="line">        <span class="keyword">return</span> node == <span class="keyword">null</span>? <span class="keyword">null</span>:node.value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 修改</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> newValue</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(K key, V newValue)</span></span>&#123;</span><br><span class="line">        Node node = getNode(<span class="keyword">this</span>.root,key);</span><br><span class="line">        <span class="keyword">if</span>(node ==<span class="keyword">null</span>)<span class="keyword">throw</span>  <span class="keyword">new</span> IllegalArgumentException(<span class="string">"key is null"</span>);</span><br><span class="line">        node.value = newValue;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> V  <span class="title">remove</span><span class="params">(K key)</span></span>&#123;</span><br><span class="line">        Node node = getNode(<span class="keyword">this</span>.root,key);</span><br><span class="line">        <span class="keyword">if</span>(node != <span class="keyword">null</span>)&#123;</span><br><span class="line">            root = remove(root, key);</span><br><span class="line">            <span class="keyword">return</span> node.value;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> Node <span class="title">remove</span><span class="params">(Node node,K key)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>)<span class="keyword">return</span>  <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">if</span>(key.compareTo(node.key) &lt;<span class="number">0</span>)&#123;</span><br><span class="line">            node.left = remove(node.left,key);</span><br><span class="line">            <span class="keyword">return</span> node;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(key.compareTo(node.key) &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            node.right = remove(node.right,key);</span><br><span class="line">            <span class="keyword">return</span> node;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(node.left == <span class="keyword">null</span>)&#123;</span><br><span class="line">                Node rightNode = node.right;</span><br><span class="line">                node.right = <span class="keyword">null</span>;</span><br><span class="line">                size--;</span><br><span class="line">                <span class="keyword">return</span> rightNode;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(node.right == <span class="keyword">null</span>)&#123;</span><br><span class="line">                Node leftNode = node.left;</span><br><span class="line">                node.left = <span class="keyword">null</span>;</span><br><span class="line">                size--;</span><br><span class="line">                <span class="keyword">return</span> leftNode;</span><br><span class="line">            &#125;</span><br><span class="line">            Node successor = minimum(node.right);</span><br><span class="line">            successor.right = removeMin(node.right);</span><br><span class="line">            successor.left =node.left;</span><br><span class="line">            node.left = node.right =<span class="keyword">null</span>;</span><br><span class="line">            <span class="keyword">return</span>  successor;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> V <span class="title">minimum</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(size ==<span class="number">0</span>)&#123; <span class="keyword">throw</span>  <span class="keyword">new</span> IllegalArgumentException(<span class="string">"size ==0"</span>); &#125;</span><br><span class="line">        <span class="keyword">return</span> minimum(root).value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Node <span class="title">minimum</span><span class="params">(Node node)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node.left ==<span class="keyword">null</span>)&#123; <span class="keyword">return</span> node; &#125;</span><br><span class="line">        <span class="keyword">return</span>   minimum(root.left);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Node <span class="title">removeMin</span><span class="params">(Node node)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node.left == <span class="keyword">null</span>)&#123;</span><br><span class="line">            Node rightNode = node.right;</span><br><span class="line">            node.right = <span class="keyword">null</span>;</span><br><span class="line">            size--;</span><br><span class="line">            <span class="keyword">return</span> rightNode;</span><br><span class="line">        &#125;</span><br><span class="line">        node.left = removeMin(node.left);</span><br><span class="line">        <span class="keyword">return</span> node;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">        StringBuilder res = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        generateBSTSting(<span class="keyword">this</span>.root,<span class="number">0</span>,res);</span><br><span class="line">        <span class="keyword">return</span> res.toString();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">generateBSTSting</span><span class="params">(Node node, <span class="keyword">int</span> depth, StringBuilder res)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>)&#123;</span><br><span class="line">            res.append(generateBSTSting(depth) + <span class="string">"null\n"</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        res.append(generateBSTSting(depth) + node.value + <span class="string">"\n"</span>);</span><br><span class="line">        generateBSTSting(node.left,depth+<span class="number">1</span>,res);</span><br><span class="line">        generateBSTSting(node.right,depth+<span class="number">1</span>,res);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">generateBSTSting</span><span class="params">(<span class="keyword">int</span> depth)</span></span>&#123;</span><br><span class="line">        StringBuilder res = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; depth;i++)&#123;</span><br><span class="line">            res.append(<span class="string">"--&gt;"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/java/Treemp/" data-id="ck0m2ip36000hq4u1oytwvh2y" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/java/README" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/java/README/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.793Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="封装一些常用集合的思路"><a href="#封装一些常用集合的思路" class="headerlink" title="封装一些常用集合的思路"></a>封装一些常用集合的思路</h2><p><a href="https://github.com/wulimax/blogs/blob/master/docs/java/arraylist.md" target="_blank" rel="noopener">1.Arraylist</a></p>
-<p><a href="https://github.com/wulimax/blogs/blob/master/docs/java/Linkedlist.md" target="_blank" rel="noopener">2.LinkedList</a></p>
-<p><a href="https://github.com/wulimax/blogs/blob/master/docs/java/AVLTree.md" target="_blank" rel="noopener">3.AVLTree</a></p>
-<p><a href="https://github.com/wulimax/blogs/blob/master/docs/java/Treemp.md" target="_blank" rel="noopener">4.TreeMP</a></p>
-<p><a href="https://github.com/wulimax/blogs/blob/master/docs/java/authcode.md" target="_blank" rel="noopener">5.discuz authcode加密类</a></p>
-<p><a href="https://github.com/wulimax/blogs/blob/master/docs/java/wxcode.md" target="_blank" rel="noopener">6.解密微信公众号数据</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/java/README/" data-id="ck0m2ip33000dq4u1npq0btoe" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/java/Linkedlist" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/java/Linkedlist/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.784Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="双向数据链表"><a href="#双向数据链表" class="headerlink" title="双向数据链表"></a>双向数据链表</h3><p>为了优化查询导致写的复杂度上升</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 自定义LinkedList</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LinkList</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Node&lt;E&gt; data; <span class="comment">//存储链表</span></span><br><span class="line">    <span class="keyword">private</span> Node&lt;E&gt; first;<span class="comment">//头部节点</span></span><br><span class="line">    <span class="keyword">private</span> Node&lt;E&gt; last;<span class="comment">//尾部节点</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">    *存储元素节点</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Node</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line">        E item;</span><br><span class="line">        Node&lt;E&gt; next;</span><br><span class="line">        Node&lt;E&gt; prev;</span><br><span class="line">        Node(E element,Node&lt;E&gt; next) &#123;</span><br><span class="line">            <span class="keyword">this</span>.item = element;</span><br><span class="line">            <span class="keyword">this</span>.next = next;</span><br><span class="line">        &#125;</span><br><span class="line">        Node(E element,Node&lt;E&gt; next,Node&lt;E&gt; prev) &#123;</span><br><span class="line">            <span class="keyword">this</span>.item = element;</span><br><span class="line">            <span class="keyword">this</span>.next = next;</span><br><span class="line">            <span class="keyword">this</span>.prev = prev;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String  <span class="title">toString</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> item.toString(); &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 构造</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  <span class="title">LinkList</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.first = <span class="keyword">new</span> Node&lt;&gt;(<span class="keyword">null</span>,<span class="keyword">null</span>);</span><br><span class="line">        <span class="keyword">this</span>.size = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取链表个数</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.size;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断链表是否为空</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.size ==<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 添加元素</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index  添加位置</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e     添加元素</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span>  <span class="title">add</span><span class="params">(<span class="keyword">int</span> index,E e)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(index &lt;<span class="number">0</span> || index &gt;<span class="keyword">this</span>.size)&#123; <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"out index"</span>); &#125;</span><br><span class="line">        Node pre = <span class="keyword">this</span>.first;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i&lt;index;i++)&#123;</span><br><span class="line">            pre = pre.next;</span><br><span class="line">        &#125;</span><br><span class="line">        pre.next =  <span class="keyword">new</span> Node(e,pre.next,pre);</span><br><span class="line">        <span class="keyword">if</span>(index == size)&#123;</span><br><span class="line">            <span class="keyword">this</span>.last = pre.next;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         <span class="keyword">this</span>.last = get(size);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.size++;</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 向头部添加元素</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addFirse</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">             add(<span class="number">0</span>,e);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 向链表尾部追加元素</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addLast</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        add(size,e);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据索引删除</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">(<span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line">        Node ro = get(index);</span><br><span class="line">        Node po = ro.prev;</span><br><span class="line">        Node no = ro.next;</span><br><span class="line">        po.next = no;</span><br><span class="line">        no.prev  =po;</span><br><span class="line">        <span class="keyword">this</span>.size--;</span><br><span class="line">        <span class="keyword">this</span>.last = get(<span class="keyword">this</span>.size);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据元素删除</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span>  <span class="title">removeE</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        remove(find(e));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更新数据</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">(<span class="keyword">int</span> index,E e)</span></span>&#123;</span><br><span class="line">        get(index).item =e;</span><br><span class="line">     &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取元素方法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Node <span class="title">get</span><span class="params">(<span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (index &lt; (size &gt;&gt; <span class="number">1</span>)) &#123;</span><br><span class="line">            Node&lt;E&gt; x = <span class="keyword">this</span>.first.next;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; index; i++)</span><br><span class="line">                x = x.next;</span><br><span class="line">            <span class="keyword">return</span> x;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            Node&lt;E&gt; x = last;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = size - <span class="number">1</span>; i &gt; index; i--)</span><br><span class="line">                x = x.prev;</span><br><span class="line">            <span class="keyword">return</span> x;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 查询元素所在索引</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">find</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x = -<span class="number">1</span>;</span><br><span class="line">        Node c = <span class="keyword">this</span>.first.next;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;size;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(c.item ==e)&#123; <span class="keyword">return</span> i; &#125;</span><br><span class="line">            c = c.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> x ;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">          <span class="keyword">return</span> find(e) ==-<span class="number">1</span>?<span class="keyword">false</span>:<span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 重写打印方法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">        StringBuilder res = <span class="keyword">new</span> StringBuilder();<span class="comment">//一个可变的字符序列。 此类提供与StringBuffer的API，但不保证同步</span></span><br><span class="line">        <span class="comment">//使用指定的格式字符串和参数返回格式化的字符串</span></span><br><span class="line">        res.append(String.format(<span class="string">"Array:size= %d "</span>,<span class="keyword">this</span>.size));</span><br><span class="line">        res.append(<span class="string">"["</span>);</span><br><span class="line">        Node x = <span class="keyword">this</span>.first;</span><br><span class="line">        <span class="keyword">for</span>(Node cur =  <span class="keyword">this</span>.first.next ; cur !=<span class="keyword">null</span> ;cur = cur.next)</span><br><span class="line">           res.append(cur+<span class="string">"-&gt;"</span>);</span><br><span class="line">        res.append(<span class="string">"NULL"</span>);</span><br><span class="line">        <span class="keyword">return</span> res.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/java/Linkedlist/" data-id="ck0m2ip31000cq4u1vaep67kz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/page/3/">&laquo; 上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/">下一页 &raquo;</a>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/09/16/url/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/16/README/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/16/docs/wx/README/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/16/docs/wx/intercepto/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/16/docs/TopN/README/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 wulimax<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>
 </html>

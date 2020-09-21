@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		Linkedlist | 
+	 
+	blog
+	</title>
+	
+	<!-- keywords,description -->
+	
+		<meta name="keywords" content="李正午，李政武，wulimax,博客，php,js,java,javascript,go,nginx,lua,swoole" />
+	 
+		<meta name="description" content="个人学习记录" />
+	
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+  
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">blog</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/" class="menu-item-link">首页</a>
+		</li>
+
+
+		<li class="menu-item">
+			<a href="https://wulimax.github.io/" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Elastsearch
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/Elastsearch/ES%E5%A4%8D%E6%9D%82%E8%81%9A%E5%90%88%E6%93%8D%E4%BD%9C/">
+										ES复杂聚合操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/Elastsearch/%E5%B0%81%E8%A3%85%E7%9A%84es%E6%93%8D%E4%BD%9C%E7%B1%BB/">
+										封装的es操作类
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										HTTP
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/HTTP/http/">
+										http
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/HTTP/newhttp/">
+										newhttp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/index/">
+										index
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										java
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/AVLTree/">
+										AVLTree
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2020/09/21/java/Linkedlist/">
+										Linkedlist
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/StringLength/">
+										StringLength
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/Treemp/">
+										Treemp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/arraylist/">
+										arraylist
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/authcode/">
+										authcode
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/bin2hex/">
+										bin2hex
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/netty/">
+										netty
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/wxcode/">
+										wxcode
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										javascript
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/javascript/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/javascript/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%B8%8B%E6%8B%89%E5%8A%A0%E8%BD%BD/">
+										移动端下拉加载
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										liunx
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/liunx/IO%E6%A8%A1%E5%9E%8B/">
+										IO模型
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/liunx/liunx%E5%9F%BA%E7%A1%80/">
+										liunx基础
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/liunx/%E9%9B%B6%E6%8B%B7%E8%B4%9D/">
+										零拷贝
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										maxwell
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/maxwell/maxwell%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5/">
+										maxwell数据同步
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										mysql
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/Explain%E6%98%AF%E4%BB%80%E4%B9%88/">
+										Explain是什么
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/MySQL%E4%BC%98%E5%8C%96/">
+										MySQL优化
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/Mysql%E4%BA%8B%E5%8A%A1/">
+										Mysql事务
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/mysql%20%E6%89%A7%E8%A1%8C%E6%AD%A5%E9%AA%A4/">
+										mysql 执行步骤
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/mysql_innodb/">
+										mysql_innodb
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/mysql/">
+										mysql
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										php
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/lru/">
+										lru
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/post_url/">
+										post_url
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">
+										图片压缩失败问题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/">
+										数据库连接
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E9%92%89%E9%92%89%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/">
+										钉钉消息推送
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E9%AB%98%E4%BD%8E%E4%BD%8D%E9%97%AE%E9%A2%98/">
+										高低位问题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										python
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/python/%E5%BE%AE%E4%BF%A1%E8%87%AA%E5%8A%A8%E8%81%8A%E5%A4%A9/">
+										微信自动聊天
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/python/%E7%88%AC%E5%8F%96tapd/">
+										爬取tapd
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										redis
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/redis/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/redis/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/">
+										事件处理
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										sphinx
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/sphinx/PHP-sphinx%E6%93%8D%E4%BD%9C/">
+										PHP-sphinx操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										websocket
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/app/">
+										app
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/index/">
+										index
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/socketFn/">
+										socketFn
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										其他
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%85%B6%E4%BB%96/go%E8%BF%9B%E8%A1%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">
+										go进行反向代理
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%85%B6%E4%BB%96/%E4%BD%BF%E7%94%A8openv%E8%BF%9B%E8%A1%8C%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">
+										使用openv进行人脸识别
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										基础知识
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E4%B8%8E%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/">
+										事件驱动与异步编程
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										小程序
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8B%A6%E6%88%AA%E7%99%BB%E9%99%86/">
+										小程序拦截登陆
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E8%80%81%E7%89%88%E6%9C%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8B%A6%E6%88%AA%E5%99%A8/">
+										老版本小程序拦截器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E6%94%B6%E8%97%8F%E7%9A%84%E7%BD%91%E7%AB%99/">
+										收藏的网站
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										算法
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/TopN%E6%80%9D%E8%B7%AF/">
+										TopN思路
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-lru/">
+										leetcode-lru
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/">
+										leetcode-两数相加
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E6%89%BE%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9C%80%E5%B0%8F%E6%95%B0/">
+										leetcode-找数组中最小数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E6%9C%80%E5%A4%A7%E7%9F%A9%E5%BD%A2/">
+										leetcode-最大矩形
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E6%AD%A3%E5%88%99%E6%90%9C%E7%B4%A2/">
+										leetcode-正则搜索
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E8%BD%A6%E7%9A%84%E5%8F%AF%E7%94%A8%E6%8D%95%E8%8E%B7%E9%87%8F/">
+										leetcode-车的可用捕获量
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E8%BF%94%E5%9B%9E%E4%B8%8B%E6%A0%87/">
+										leetcode-返回下标
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E9%A4%90%E7%9B%98%E6%A0%88/">
+										leetcode-餐盘栈
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/lettcode-%E6%9F%B1%E7%8A%B6%E5%9B%BE%E4%B8%AD%E6%9C%80%E5%A4%A7%E7%9A%84%E7%9F%A9%E5%BD%A2/">
+										lettcode-柱状图中最大的矩形
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E5%8E%BB%E9%87%8D/">
+										去重
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E6%89%BE%E4%B8%AD%E4%BD%8D%E6%95%B0/">
+										找中位数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/">
+										排序
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/">
+										斐波那契数列
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	Linkedlist
+</h1>
+<div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/2020/09/21/java/Linkedlist/" class="leancloud_visitors" data-flag-title=""></span>
+		</span>
+	
+	<span>li zhengwu</span>
+	<span>2020-09-21 18:02:56</span>
+    
+		<div id="article-categories">
+            
+		</div>
+    
+</div>
+
+<div id="article-content">
+	<h3 id="双向数据链表"><a href="#双向数据链表" class="headerlink" title="双向数据链表"></a>双向数据链表</h3><p>为了优化查询导致写的复杂度上升</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 自定义LinkedList</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LinkList</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Node&lt;E&gt; data; <span class="comment">//存储链表</span></span><br><span class="line">    <span class="keyword">private</span> Node&lt;E&gt; first;<span class="comment">//头部节点</span></span><br><span class="line">    <span class="keyword">private</span> Node&lt;E&gt; last;<span class="comment">//尾部节点</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">    *存储元素节点</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Node</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line">        E item;</span><br><span class="line">        Node&lt;E&gt; next;</span><br><span class="line">        Node&lt;E&gt; prev;</span><br><span class="line">        Node(E element,Node&lt;E&gt; next) &#123;</span><br><span class="line">            <span class="keyword">this</span>.item = element;</span><br><span class="line">            <span class="keyword">this</span>.next = next;</span><br><span class="line">        &#125;</span><br><span class="line">        Node(E element,Node&lt;E&gt; next,Node&lt;E&gt; prev) &#123;</span><br><span class="line">            <span class="keyword">this</span>.item = element;</span><br><span class="line">            <span class="keyword">this</span>.next = next;</span><br><span class="line">            <span class="keyword">this</span>.prev = prev;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String  <span class="title">toString</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> item.toString(); &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 构造</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  <span class="title">LinkList</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.first = <span class="keyword">new</span> Node&lt;&gt;(<span class="keyword">null</span>,<span class="keyword">null</span>);</span><br><span class="line">        <span class="keyword">this</span>.size = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取链表个数</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.size;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断链表是否为空</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.size ==<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 添加元素</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index  添加位置</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e     添加元素</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span>  <span class="title">add</span><span class="params">(<span class="keyword">int</span> index,E e)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(index &lt;<span class="number">0</span> || index &gt;<span class="keyword">this</span>.size)&#123; <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">&quot;out index&quot;</span>); &#125;</span><br><span class="line">        Node pre = <span class="keyword">this</span>.first;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i&lt;index;i++)&#123;</span><br><span class="line">            pre = pre.next;</span><br><span class="line">        &#125;</span><br><span class="line">        pre.next =  <span class="keyword">new</span> Node(e,pre.next,pre);</span><br><span class="line">        <span class="keyword">if</span>(index == size)&#123;</span><br><span class="line">            <span class="keyword">this</span>.last = pre.next;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         <span class="keyword">this</span>.last = get(size);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.size++;</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 向头部添加元素</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addFirse</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">             add(<span class="number">0</span>,e);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 向链表尾部追加元素</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addLast</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        add(size,e);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据索引删除</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">(<span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line">        Node ro = get(index);</span><br><span class="line">        Node po = ro.prev;</span><br><span class="line">        Node no = ro.next;</span><br><span class="line">        po.next = no;</span><br><span class="line">        no.prev  =po;</span><br><span class="line">        <span class="keyword">this</span>.size--;</span><br><span class="line">        <span class="keyword">this</span>.last = get(<span class="keyword">this</span>.size);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据元素删除</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span>  <span class="title">removeE</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        remove(find(e));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更新数据</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">(<span class="keyword">int</span> index,E e)</span></span>&#123;</span><br><span class="line">        get(index).item =e;</span><br><span class="line">     &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取元素方法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Node <span class="title">get</span><span class="params">(<span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (index &lt; (size &gt;&gt; <span class="number">1</span>)) &#123;</span><br><span class="line">            Node&lt;E&gt; x = <span class="keyword">this</span>.first.next;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; index; i++)</span><br><span class="line">                x = x.next;</span><br><span class="line">            <span class="keyword">return</span> x;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            Node&lt;E&gt; x = last;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = size - <span class="number">1</span>; i &gt; index; i--)</span><br><span class="line">                x = x.prev;</span><br><span class="line">            <span class="keyword">return</span> x;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 查询元素所在索引</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">find</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x = -<span class="number">1</span>;</span><br><span class="line">        Node c = <span class="keyword">this</span>.first.next;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;size;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(c.item ==e)&#123; <span class="keyword">return</span> i; &#125;</span><br><span class="line">            c = c.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> x ;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">          <span class="keyword">return</span> find(e) ==-<span class="number">1</span>?<span class="keyword">false</span>:<span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 重写打印方法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">        StringBuilder res = <span class="keyword">new</span> StringBuilder();<span class="comment">//一个可变的字符序列。 此类提供与StringBuffer的API，但不保证同步</span></span><br><span class="line">        <span class="comment">//使用指定的格式字符串和参数返回格式化的字符串</span></span><br><span class="line">        res.append(String.format(<span class="string">&quot;Array:size= %d &quot;</span>,<span class="keyword">this</span>.size));</span><br><span class="line">        res.append(<span class="string">&quot;[&quot;</span>);</span><br><span class="line">        Node x = <span class="keyword">this</span>.first;</span><br><span class="line">        <span class="keyword">for</span>(Node cur =  <span class="keyword">this</span>.first.next ; cur !=<span class="keyword">null</span> ;cur = cur.next)</span><br><span class="line">           res.append(cur+<span class="string">&quot;-&gt;&quot;</span>);</span><br><span class="line">        res.append(<span class="string">&quot;NULL&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> res.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2020/09/21/java/netty/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  netty
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2020/09/21/java/bin2hex/">
+                bin2hex
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: 'bqrlVYlyPT5UnmtXRE4iyxQ5-gzGzoHsz',
+			appKey: 'v7dGksasCCi8kjjYitfC9idU',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2017-<span id="footerYear"></span>
+	<a href="/">li zhengwu</a>
+
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv">
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="https://wulimax.github.io/" target="_blank">Tree</a>
+	by <a href="https://github.com/wulimax/blogs" target="_blank">wulimax</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript">
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>

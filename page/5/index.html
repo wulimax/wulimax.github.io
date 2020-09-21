@@ -1,850 +1,1082 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	 
+	blog
+	</title>
+	
+	<!-- keywords,description -->
+	
+		<meta name="keywords" content="李正午，李政武，wulimax,博客，php,js,java,javascript,go,nginx,lua,swoole" />
+	 
+		<meta name="description" content="个人学习记录" />
+	
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
   
 
-  
-  <title>blogs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="坚持保持一颗好奇心">
-<meta name="keywords" content="php,java,javascript,node,go,lua,nginx,sphinx,elasticesarch,算法">
-<meta property="og:type" content="website">
-<meta property="og:title" content="blogs">
-<meta property="og:url" content="https://wulimax.github.io/page/5/index.html">
-<meta property="og:site_name" content="blogs">
-<meta property="og:description" content="坚持保持一颗好奇心">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="blogs">
-<meta name="twitter:description" content="坚持保持一颗好奇心">
-  
-    <link rel="alternate" href="/atom.xml" title="blogs" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-</html>
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 5.1.1"></head>
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">blogs</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wulimax.github.io"></form>
-      </div>
-    </div>
-  </div>
+	<header id="header">
+    <a id="title" href="/" class="logo">blog</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/" class="menu-item-link">首页</a>
+		</li>
+
+
+		<li class="menu-item">
+			<a href="https://wulimax.github.io/" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-docs/java/AVLTree" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/java/AVLTree/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.779Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>平衡二叉树</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 平衡二叉树</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AVLTree</span>&lt;<span class="title">K</span> <span class="keyword">extends</span> <span class="title">Comparable</span>&lt;<span class="title">K</span>&gt;,<span class="title">V</span>&gt; </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">Node</span></span>&#123;</span><br><span class="line">        <span class="keyword">public</span> K key;</span><br><span class="line">        <span class="keyword">public</span> V value;</span><br><span class="line">        <span class="keyword">public</span> Node left,right;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">int</span> height ;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span> <span class="params">(K key,V value)</span></span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.key = key;</span><br><span class="line">            <span class="keyword">this</span>.value = value;</span><br><span class="line">            <span class="keyword">this</span>.left = <span class="keyword">null</span>;</span><br><span class="line">            <span class="keyword">this</span>.right = <span class="keyword">null</span>;</span><br><span class="line">            <span class="keyword">this</span>.height =<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> Node  root;</span><br><span class="line">    <span class="keyword">private</span>  <span class="keyword">int</span> size;</span><br><span class="line">    <span class="comment">/*构造方法*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">AVLTree</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.root = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">this</span>.size = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> <span class="keyword">this</span>.size; &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.size==<span class="number">0</span>; &#125;</span><br><span class="line">    <span class="comment">/**判断是否是二分搜索树*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isBST</span><span class="params">()</span></span>&#123;</span><br><span class="line">        ArrayList&lt;K&gt; keys = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        inOrder(root,keys);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">1</span>;i&lt;keys.size();i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(keys.get(i-<span class="number">1</span>).compareTo(keys.get(i))&gt; <span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">return</span>  <span class="keyword">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**进行一次中序遍历*/</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">inOrder</span><span class="params">(Node node,ArrayList&lt;K&gt; keys)</span></span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(node == <span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">      inOrder(node.left,keys);</span><br><span class="line">      keys.add(node.key);</span><br><span class="line">      inOrder(node.right,keys);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**判断是否是平衡二叉树*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isBalanced</span><span class="params">()</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> isBalanced(<span class="keyword">this</span>.root);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isBalanced</span><span class="params">(Node node)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>)<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">int</span> balaneeFactor = getBalanceFactor(node);</span><br><span class="line">        <span class="keyword">if</span>(Math.abs(balaneeFactor) &gt; <span class="number">1</span>) <span class="keyword">return</span>  <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span>  isBalanced(node.left)  &amp;&amp; isBalanced(node.right);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**获取节点高度*/</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">getHeight</span><span class="params">(Node  node)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> node.height;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**获取节点的平衡因子*/</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span>  <span class="title">getBalanceFactor</span><span class="params">(Node node)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> getHeight(node.left) - getHeight(node.right);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**添加元素*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(K key,V value)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.root = add(root,key,value);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> Node <span class="title">add</span><span class="params">(Node node, K key, V value)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">this</span>.size++;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Node(key,value);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(key.compareTo(node.key) &lt; <span class="number">0</span>)&#123;</span><br><span class="line">            node.left =   add(node.left,key,value);</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(key.compareTo(node.key) &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            node.right =   add(node.right,key,value);</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            node.value = value;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//更新高度</span></span><br><span class="line">        node.height = <span class="number">1</span> + Math.max(getHeight(node.left),getHeight(node.right));</span><br><span class="line">        <span class="comment">//计算平衡因子</span></span><br><span class="line">        <span class="keyword">int</span> balanceFactor = getBalanceFactor(node);</span><br><span class="line">        <span class="keyword">if</span>(Math.abs(balanceFactor) &gt; <span class="number">1</span>)&#123;</span><br><span class="line">            <span class="comment">//输出平衡因子</span></span><br><span class="line"><span class="comment">//            System.out.println("balanceFactor: "+ balanceFactor );</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//维护平衡</span></span><br><span class="line">        <span class="comment">//LL</span></span><br><span class="line">        <span class="keyword">if</span>(balanceFactor &gt; <span class="number">1</span> &amp;&amp; getBalanceFactor(node.left) &gt;=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">//左边不平衡 需要右旋转</span></span><br><span class="line">            <span class="keyword">return</span> rightRotate(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//RR</span></span><br><span class="line">        <span class="keyword">if</span>(balanceFactor &lt; -<span class="number">1</span> &amp;&amp; getBalanceFactor(node.right) &lt;=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">//右边不平衡 需要左旋转</span></span><br><span class="line">            <span class="keyword">return</span> leftRotate(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//LR</span></span><br><span class="line">        <span class="keyword">if</span>(balanceFactor &gt;<span class="number">1</span> &amp;&amp; getBalanceFactor(node.left) &lt; <span class="number">0</span>)&#123;</span><br><span class="line">            node.left = leftRotate(node.left);</span><br><span class="line">            <span class="keyword">return</span> rightRotate(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//RL</span></span><br><span class="line">        <span class="keyword">if</span>(balanceFactor &lt; -<span class="number">1</span> &amp;&amp; getBalanceFactor(node.right) &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            node.right = rightRotate(node.right);</span><br><span class="line">            <span class="keyword">return</span> leftRotate(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span>  node;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/** 左数高度高于右树时进行右旋转</span></span><br><span class="line"><span class="comment">     *               y                      x</span></span><br><span class="line"><span class="comment">     *             /  \                   /  \</span></span><br><span class="line"><span class="comment">     *           x     T4               z     y</span></span><br><span class="line"><span class="comment">     *         /   \     右旋转(y)     /\     /\</span></span><br><span class="line"><span class="comment">     *        z     T3  -------&gt;     T1  T2  T3 T4</span></span><br><span class="line"><span class="comment">     *      /  \</span></span><br><span class="line"><span class="comment">     *    T1    T2</span></span><br><span class="line"><span class="comment">     * */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> Node <span class="title">rightRotate</span><span class="params">(Node y)</span></span>&#123;</span><br><span class="line">     Node x = y.left;</span><br><span class="line">     Node T3 = x.right;</span><br><span class="line"></span><br><span class="line">     x.right =y;</span><br><span class="line">     y.left =T3;</span><br><span class="line">     y.height = Math.max(getHeight(y.left),getHeight(y.right)) +<span class="number">1</span>;</span><br><span class="line">     x.height = Math.max(getHeight(x.left),getHeight(x.right)) +<span class="number">1</span>;</span><br><span class="line">     <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**右树高度高于左树时 进行左旋转</span></span><br><span class="line"><span class="comment">     *                x                  y</span></span><br><span class="line"><span class="comment">     *              /  \               /  \</span></span><br><span class="line"><span class="comment">     *            z     y  左旋转    T4     x</span></span><br><span class="line"><span class="comment">     *           /\     /\  &lt;----          / \</span></span><br><span class="line"><span class="comment">     *         T1  T2  T3 T4           T3     z</span></span><br><span class="line"><span class="comment">     *                                       / \</span></span><br><span class="line"><span class="comment">     *                                      T1  T2</span></span><br><span class="line"><span class="comment">     * */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> Node <span class="title">leftRotate</span><span class="params">(Node y)</span></span>&#123;</span><br><span class="line">        Node x = y.right;</span><br><span class="line">        Node T2 = x.left;</span><br><span class="line"></span><br><span class="line">        x.left =y;</span><br><span class="line">        y.right =T2;</span><br><span class="line">        y.height = Math.max(getHeight(y.left),getHeight(y.right)) +<span class="number">1</span>;</span><br><span class="line">        x.height = Math.max(getHeight(x.left),getHeight(x.right)) +<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 查询</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> node</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> Node <span class="title">getNode</span> <span class="params">(Node node ,K key)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>) <span class="keyword">return</span>  <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">if</span>(key.compareTo(node.key) == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span>  node;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(key.compareTo(node.key) &lt;<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> getNode(node.left,key);</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> getNode(node.right,key);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(K key)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> getNode(<span class="keyword">this</span>.root,key) != <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> V <span class="title">get</span><span class="params">(K key)</span></span>&#123;</span><br><span class="line">        Node node  = getNode(<span class="keyword">this</span>.root,key);</span><br><span class="line">        <span class="keyword">return</span> node == <span class="keyword">null</span>? <span class="keyword">null</span>:node.value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 修改</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> newValue</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(K key, V newValue)</span></span>&#123;</span><br><span class="line">        Node node = getNode(<span class="keyword">this</span>.root,key);</span><br><span class="line">        <span class="keyword">if</span>(node ==<span class="keyword">null</span>)<span class="keyword">throw</span>  <span class="keyword">new</span> IllegalArgumentException(<span class="string">"key is null"</span>);</span><br><span class="line">        node.value = newValue;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> V  <span class="title">remove</span><span class="params">(K key)</span></span>&#123;</span><br><span class="line">        Node node = getNode(<span class="keyword">this</span>.root,key);</span><br><span class="line">        <span class="keyword">if</span>(node != <span class="keyword">null</span>)&#123;</span><br><span class="line">            root = remove(root, key);</span><br><span class="line">            <span class="keyword">return</span> node.value;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> Node <span class="title">remove</span><span class="params">(Node node,K key)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>)<span class="keyword">return</span>  <span class="keyword">null</span>;</span><br><span class="line">        Node retNode;</span><br><span class="line">        <span class="keyword">if</span>(key.compareTo(node.key) &lt;<span class="number">0</span>)&#123;</span><br><span class="line">            node.left = remove(node.left,key);</span><br><span class="line">            retNode  = node;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(key.compareTo(node.key) &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            node.right = remove(node.right,key);</span><br><span class="line">            retNode  = node;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(node.left == <span class="keyword">null</span>)&#123;</span><br><span class="line">                Node rightNode = node.right;</span><br><span class="line">                node.right = <span class="keyword">null</span>;</span><br><span class="line">                size--;</span><br><span class="line">               retNode = rightNode;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(node.right == <span class="keyword">null</span>)&#123;</span><br><span class="line">                Node leftNode = node.left;</span><br><span class="line">                node.left = <span class="keyword">null</span>;</span><br><span class="line">                size--;</span><br><span class="line">                retNode = leftNode;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                Node successor = minimum(node.right);</span><br><span class="line">                successor.right = remove(node.right, successor.key);</span><br><span class="line">                successor.left = node.left;</span><br><span class="line">                node.left = node.right = <span class="keyword">null</span>;</span><br><span class="line">                retNode = successor;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(retNode == <span class="keyword">null</span>)&#123; <span class="keyword">return</span>  <span class="keyword">null</span>; &#125;</span><br><span class="line">        <span class="comment">//更新高度</span></span><br><span class="line">        retNode.height = <span class="number">1</span> + Math.max(getHeight(retNode.left),getHeight(retNode.right));</span><br><span class="line">        <span class="comment">//计算平衡因子</span></span><br><span class="line">        <span class="keyword">int</span> balanceFactor = getBalanceFactor(retNode);</span><br><span class="line">        <span class="keyword">if</span>(Math.abs(balanceFactor) &gt; <span class="number">1</span>)&#123;</span><br><span class="line">            <span class="comment">//输出平衡因子</span></span><br><span class="line"><span class="comment">//            System.out.println("balanceFactor: "+ balanceFactor );</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//维护平衡</span></span><br><span class="line">        <span class="comment">//LL</span></span><br><span class="line">        <span class="keyword">if</span>(balanceFactor &gt; <span class="number">1</span> &amp;&amp; getBalanceFactor(retNode.left) &gt;=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">//左边不平衡 需要右旋转</span></span><br><span class="line">            <span class="keyword">return</span> rightRotate(retNode);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//RR</span></span><br><span class="line">        <span class="keyword">if</span>(balanceFactor &lt; -<span class="number">1</span> &amp;&amp; getBalanceFactor(retNode.right) &lt;=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">//右边不平衡 需要左旋转</span></span><br><span class="line">            <span class="keyword">return</span> leftRotate(retNode);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//LR</span></span><br><span class="line">        <span class="keyword">if</span>(balanceFactor &gt;<span class="number">1</span> &amp;&amp; getBalanceFactor(retNode.left) &lt; <span class="number">0</span>)&#123;</span><br><span class="line">            retNode.left = leftRotate(retNode.left);</span><br><span class="line">            <span class="keyword">return</span> rightRotate(retNode);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//RL</span></span><br><span class="line">        <span class="keyword">if</span>(balanceFactor &lt; -<span class="number">1</span> &amp;&amp; getBalanceFactor(retNode.right) &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            retNode.right = rightRotate(retNode.right);</span><br><span class="line">            <span class="keyword">return</span> leftRotate(retNode);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span>  retNode;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> V <span class="title">minimum</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(size ==<span class="number">0</span>)&#123; <span class="keyword">throw</span>  <span class="keyword">new</span> IllegalArgumentException(<span class="string">"size ==0"</span>); &#125;</span><br><span class="line">        <span class="keyword">return</span> minimum(root).value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Node <span class="title">minimum</span><span class="params">(Node node)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node.left ==<span class="keyword">null</span>)&#123; <span class="keyword">return</span> node; &#125;</span><br><span class="line">        <span class="keyword">return</span>   minimum(root.left);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">        StringBuilder res = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        generateBSTSting(<span class="keyword">this</span>.root,<span class="number">0</span>,res);</span><br><span class="line">        <span class="keyword">return</span> res.toString();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">generateBSTSting</span><span class="params">(Node node, <span class="keyword">int</span> depth, StringBuilder res)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>)&#123;</span><br><span class="line">            res.append(generateBSTSting(depth) + <span class="string">"null\n"</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        res.append(generateBSTSting(depth) + node.value + <span class="string">"\n"</span>);</span><br><span class="line">        generateBSTSting(node.left,depth+<span class="number">1</span>,res);</span><br><span class="line">        generateBSTSting(node.right,depth+<span class="number">1</span>,res);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">generateBSTSting</span><span class="params">(<span class="keyword">int</span> depth)</span></span>&#123;</span><br><span class="line">        StringBuilder res = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; depth;i++)&#123;</span><br><span class="line">            res.append(<span class="string">"--&gt;"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/java/AVLTree/" data-id="ck0m2ip2z000bq4u1tvrda1zf" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/java/authcode" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/java/authcode/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.773Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>根据php 经典加密类 discuz authcode 的java 版本</p>
-<p>php版本</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> string $string    明文或密文字符串</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> string $operation    DECODE表示解密,其它表示加密</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> string $key    密钥</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> int $expiry    密文有效期,0代码永不过期</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> string</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">authcode</span><span class="params">($string, $operation = <span class="string">'DECODE'</span>, $key = <span class="string">''</span>, $expiry = <span class="number">0</span>)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 动态密匙长度，相同的明文会生成不同密文就是依靠动态密匙</span></span><br><span class="line">    $ckey_length = <span class="number">4</span>;</span><br><span class="line">    <span class="comment">// 密匙</span></span><br><span class="line">    $key = md5 ( $key ? $key : $GLOBALS [<span class="string">'discuz_auth_key'</span>] );</span><br><span class="line">    <span class="comment">// 密匙a会参与加解密</span></span><br><span class="line">    $keya = md5 ( substr ( $key, <span class="number">0</span>, <span class="number">16</span> ) );</span><br><span class="line">    <span class="comment">// 密匙b会用来做数据完整性验证</span></span><br><span class="line">    $keyb = md5 ( substr ( $key, <span class="number">16</span>, <span class="number">16</span> ) );</span><br><span class="line">    <span class="comment">// 密匙c用于变化生成的密文</span></span><br><span class="line">    $keyc = $ckey_length ? ($operation == <span class="string">'DECODE'</span> ? substr ( $string, <span class="number">0</span>, $ckey_length ) : substr ( md5 ( microtime () ), - $ckey_length )) : <span class="string">''</span>;</span><br><span class="line">    <span class="comment">// 参与运算的密匙</span></span><br><span class="line">    $cryptkey = $keya . md5 ( $keya . $keyc );</span><br><span class="line">    $key_length = strlen ( $cryptkey );</span><br><span class="line">    <span class="comment">// 明文，前10位用来保存时间戳，解密时验证数据有效性，10到26位用来保存$keyb(密匙b)，解密时会通过这个密匙验证数据完整性</span></span><br><span class="line">    <span class="comment">// 如果是解码的话，会从第$ckey_length位开始，因为密文前$ckey_length位保存 动态密匙，以保证解密正确</span></span><br><span class="line">    $string = $operation == <span class="string">'DECODE'</span> ? base64_decode ( substr ( $string, $ckey_length ) ) : sprintf ( <span class="string">'0d'</span>, $expiry ? $expiry + time () : <span class="number">0</span> ) . substr ( md5 ( $string . $keyb ), <span class="number">0</span>, <span class="number">16</span> ) . $string;</span><br><span class="line">    $string_length = strlen ( $string );</span><br><span class="line">    $result = <span class="string">''</span>;</span><br><span class="line">    $box = range ( <span class="number">0</span>, <span class="number">255</span> );</span><br><span class="line">    $rndkey = <span class="keyword">array</span> ();</span><br><span class="line">    <span class="comment">// 产生密匙簿</span></span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">0</span>; $i &lt;= <span class="number">255</span>; $i ++) &#123;</span><br><span class="line">        $rndkey [$i] = ord ( $cryptkey [$i % $key_length] );</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 用固定的算法，打乱密匙簿，增加随机性，好像很复杂，实际上对并不会增加密文的强度</span></span><br><span class="line">    <span class="keyword">for</span>($j = $i = <span class="number">0</span>; $i &lt; <span class="number">256</span>; $i ++) &#123;</span><br><span class="line">        $j = ($j + $box [$i] + $rndkey [$i]) % <span class="number">256</span>;</span><br><span class="line">        $tmp = $box [$i];</span><br><span class="line">        $box [$i] = $box [$j];</span><br><span class="line">        $box [$j] = $tmp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 核心加解密部分</span></span><br><span class="line">    <span class="keyword">for</span>($a = $j = $i = <span class="number">0</span>; $i &lt; $string_length; $i ++) &#123;</span><br><span class="line">        $a = ($a + <span class="number">1</span>) % <span class="number">256</span>;</span><br><span class="line">        $j = ($j + $box [$a]) % <span class="number">256</span>;</span><br><span class="line">        $tmp = $box [$a];</span><br><span class="line">        $box [$a] = $box [$j];</span><br><span class="line">        $box [$j] = $tmp;</span><br><span class="line">        <span class="comment">// 从密匙簿得出密匙进行异或，再转成字符</span></span><br><span class="line">        $result .= chr ( ord ( $string [$i] ) ^ ($box [($box [$a] + $box [$j]) % <span class="number">256</span>]) );</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> ($operation == <span class="string">'DECODE'</span>) &#123;</span><br><span class="line">        <span class="comment">// substr($result, 0, 10) == 0 验证数据有效性</span></span><br><span class="line">        <span class="comment">// substr($result, 0, 10) - time() &gt; 0 验证数据有效性</span></span><br><span class="line">        <span class="comment">// substr($result, 10, 16) == substr(md5(substr($result, 26).$keyb), 0,</span></span><br><span class="line">        <span class="comment">// 16) 验证数据完整性</span></span><br><span class="line">        <span class="comment">// 验证数据有效性，请看未加密明文的格式</span></span><br><span class="line">        <span class="keyword">if</span> ((substr ( $result, <span class="number">0</span>, <span class="number">10</span> ) == <span class="number">0</span> || substr ( $result, <span class="number">0</span>, <span class="number">10</span> ) - time () &gt; <span class="number">0</span>) &amp;&amp; substr ( $result, <span class="number">10</span>, <span class="number">16</span> ) == substr ( md5 ( substr ( $result, <span class="number">26</span> ) . $keyb ), <span class="number">0</span>, <span class="number">16</span> )) &#123;</span><br><span class="line">            <span class="keyword">return</span> substr ( $result, <span class="number">26</span> );</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">''</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">// 把动态密匙保存在密文里，这也是为什么同样的明文，生产不同密文后能解密的原因</span></span><br><span class="line">        <span class="comment">// 因为加密后的密文可能是一些特殊字符，复制过程可能会丢失，所以用base64编码</span></span><br><span class="line">        <span class="keyword">return</span> $keyc . str_replace ( <span class="string">'='</span>, <span class="string">''</span>, base64_encode ( $result ) );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>java版:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.sun.org.apache.xerces.internal.impl.dv.util.Base64;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.security.MessageDigest;</span><br><span class="line"><span class="keyword">import</span> java.security.NoSuchAlgorithmException;</span><br><span class="line"><span class="keyword">import</span> java.util.Calendar;</span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AesEncryptUtils</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">enum</span> DiscuzAuthcodeMode &#123;</span><br><span class="line">        Encode, Decode</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 从字符串的指定位置截取指定长度的子字符串</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="str"&gt;原字符串&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="startIndex"&gt;子字符串的起始位置&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="length"&gt;子字符串的长度&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;子字符串&lt;/returns&gt;</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">CutString</span><span class="params">(String str, <span class="keyword">int</span> startIndex, <span class="keyword">int</span> length)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (startIndex &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (length &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                length = length * -<span class="number">1</span>;</span><br><span class="line">                <span class="keyword">if</span> (startIndex - length &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                    length = startIndex;</span><br><span class="line">                    startIndex = <span class="number">0</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    startIndex = startIndex - length;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (startIndex &gt; str.length()) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (length &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (length + startIndex &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    length = length + startIndex;</span><br><span class="line">                    startIndex = <span class="number">0</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (str.length() - startIndex &lt; length) &#123;</span><br><span class="line"></span><br><span class="line">            length = str.length() - startIndex;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> str.substring(startIndex, startIndex + length);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 从字符串的指定位置开始截取到字符串结尾的了符串</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="str"&gt;原字符串&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="startIndex"&gt;子字符串的起始位置&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;子字符串&lt;/returns&gt;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span>   String <span class="title">CutString</span><span class="params">(String str, <span class="keyword">int</span> startIndex)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> CutString(str, startIndex, str.length());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 返回文件是否存在</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="filename"&gt;文件名&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;是否存在&lt;/returns&gt;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">FileExists</span><span class="params">(String filename)</span> </span>&#123;</span><br><span class="line">        File f = <span class="keyword">new</span> File(filename);</span><br><span class="line">        <span class="keyword">return</span> f.exists();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// MD5函数</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="str"&gt;原始字符串&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;MD5结果&lt;/returns&gt;</span></span><br><span class="line"><span class="comment">//    public static String MD5(String str) &#123;</span></span><br><span class="line"><span class="comment">//        return md5.getMD5ofStr(str);</span></span><br><span class="line"><span class="comment">//    &#125;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 字段串是否为Null或为""(空)</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="str"&gt;&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;&lt;/returns&gt;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">StrIsNullOrEmpty</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//#if NET1</span></span><br><span class="line">        <span class="keyword">if</span> (str == <span class="keyword">null</span> || str.trim().equals(<span class="string">""</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 用于 RC4 处理密码</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="pass"&gt;密码字串&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="kLen"&gt;密钥长度，一般为 256&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;&lt;/returns&gt;</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">byte</span>[] GetKey(<span class="keyword">byte</span>[] pass, <span class="keyword">int</span> kLen) &#123;</span><br><span class="line">        <span class="keyword">byte</span>[] mBox = <span class="keyword">new</span> <span class="keyword">byte</span>[kLen];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; kLen; i++) &#123;</span><br><span class="line">            mBox[i] = (<span class="keyword">byte</span>) i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; kLen; i++) &#123;</span><br><span class="line">            j = (j + (<span class="keyword">int</span>) ((mBox[i] + <span class="number">256</span>) % <span class="number">256</span>) + pass[i % pass.length])</span><br><span class="line">                    % kLen;</span><br><span class="line">            <span class="keyword">byte</span> temp = mBox[i];</span><br><span class="line">            mBox[i] = mBox[j];</span><br><span class="line">            mBox[j] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> mBox;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 生成随机字符</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="lens"&gt;随机字符长度&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;随机字符&lt;/returns&gt;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  String <span class="title">RandomString</span><span class="params">(<span class="keyword">int</span> lens)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">char</span>[] CharArray = &#123; <span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>, <span class="string">'f'</span>, <span class="string">'g'</span>, <span class="string">'h'</span>, <span class="string">'j'</span>, <span class="string">'k'</span>,</span><br><span class="line">                <span class="string">'l'</span>, <span class="string">'m'</span>, <span class="string">'n'</span>, <span class="string">'o'</span>, <span class="string">'p'</span>, <span class="string">'q'</span>, <span class="string">'r'</span>, <span class="string">'s'</span>, <span class="string">'t'</span>, <span class="string">'u'</span>, <span class="string">'v'</span>, <span class="string">'w'</span>,</span><br><span class="line">                <span class="string">'x'</span>, <span class="string">'y'</span>, <span class="string">'z'</span>, <span class="string">'0'</span>, <span class="string">'1'</span>, <span class="string">'2'</span>, <span class="string">'3'</span>, <span class="string">'4'</span>, <span class="string">'5'</span>, <span class="string">'6'</span>, <span class="string">'7'</span>, <span class="string">'8'</span>, <span class="string">'9'</span> &#125;;</span><br><span class="line">        <span class="keyword">int</span> clens = CharArray.length;</span><br><span class="line">        String sCode = <span class="string">""</span>;</span><br><span class="line">        Random random = <span class="keyword">new</span> Random();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; lens; i++) &#123;</span><br><span class="line">            sCode += CharArray[Math.abs(random.nextInt(clens))];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sCode;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 使用 Discuz authcode 方法对字符串加密</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="source"&gt;原始字符串&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="key"&gt;密钥&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="expiry"&gt;加密字串有效时间，单位是秒&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;加密结果&lt;/returns&gt;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  String <span class="title">authcodeEncode</span><span class="params">(String source, String key, <span class="keyword">int</span> expiry)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> authcode(source, key, DiscuzAuthcodeMode.Encode, expiry);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 使用 Discuz authcode 方法对字符串加密</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="source"&gt;原始字符串&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="key"&gt;密钥&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;加密结果&lt;/returns&gt;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  String <span class="title">authcodeEncode</span><span class="params">(String source, String key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> authcode(source, key, DiscuzAuthcodeMode.Encode, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 使用 Discuz authcode 方法对字符串解密</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="source"&gt;原始字符串&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="key"&gt;密钥&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;解密结果&lt;/returns&gt;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  String <span class="title">authcodeDecode</span><span class="params">(String source, String key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> authcode(source, key, DiscuzAuthcodeMode.Decode, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">/// 使用 变形的 rc4 编码方法对字符串进行加密或者解密</span></span><br><span class="line">    <span class="comment">/// &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="source"&gt;原始字符串&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="key"&gt;密钥&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="operation"&gt;操作 加密还是解密&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;param name="expiry"&gt;加密字串过期时间&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">/// &lt;returns&gt;加密或者解密后的字符串&lt;/returns&gt;</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span>  String <span class="title">authcode</span><span class="params">(String source, String key,</span></span></span><br><span class="line"><span class="function"><span class="params">                                   DiscuzAuthcodeMode operation, <span class="keyword">int</span> expiry)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (source == <span class="keyword">null</span> || key == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> ckey_length = <span class="number">0</span>;</span><br><span class="line">            String keya, keyb, keyc, cryptkey, result;</span><br><span class="line">            key = MD52(key);</span><br><span class="line">            keya = MD52(CutString(key, <span class="number">0</span>, <span class="number">16</span>));</span><br><span class="line">            keyb = MD52(CutString(key, <span class="number">16</span>, <span class="number">16</span>));</span><br><span class="line">            keyc = ckey_length &gt; <span class="number">0</span> ? (operation == DiscuzAuthcodeMode.Decode ? CutString(</span><br><span class="line">                    source, <span class="number">0</span>, ckey_length)</span><br><span class="line">                    : RandomString(ckey_length))</span><br><span class="line">                    : <span class="string">""</span>;</span><br><span class="line">            cryptkey = keya + MD52(keya + keyc);</span><br><span class="line">            <span class="keyword">if</span> (operation == DiscuzAuthcodeMode.Decode) &#123;</span><br><span class="line">                <span class="keyword">byte</span>[] temp;</span><br><span class="line">                temp = Base64.decode(CutString(source, ckey_length));</span><br><span class="line">                result = <span class="keyword">new</span> String(RC4(temp, cryptkey));</span><br><span class="line">                <span class="keyword">if</span> (CutString(result, <span class="number">10</span>, <span class="number">16</span>).equals(CutString(MD52(CutString(result, <span class="number">26</span>) + keyb), <span class="number">0</span>, <span class="number">16</span>))) &#123;</span><br><span class="line">                    <span class="keyword">return</span> CutString(result, <span class="number">26</span>);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    temp = Base64.decode(CutString(source+<span class="string">"="</span>, ckey_length));</span><br><span class="line">                    result = <span class="keyword">new</span> String(RC4(temp, cryptkey));</span><br><span class="line">                    <span class="keyword">if</span> (CutString(result, <span class="number">10</span>, <span class="number">16</span>).equals(CutString(MD52(CutString(result, <span class="number">26</span>) + keyb), <span class="number">0</span>, <span class="number">16</span>))) &#123;</span><br><span class="line">                        <span class="keyword">return</span> CutString(result, <span class="number">26</span>);</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        temp = Base64.decode(CutString(source+<span class="string">"=="</span>, ckey_length));</span><br><span class="line">                        result = <span class="keyword">new</span> String(RC4(temp, cryptkey));</span><br><span class="line">                        <span class="keyword">if</span> (CutString(result, <span class="number">10</span>, <span class="number">16</span>).equals(CutString(MD52(CutString(result, <span class="number">26</span>) + keyb), <span class="number">0</span>, <span class="number">16</span>))) &#123;</span><br><span class="line">                            <span class="keyword">return</span> CutString(result, <span class="number">26</span>);</span><br><span class="line">                        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                            <span class="keyword">return</span> <span class="string">"2"</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                source = <span class="string">"0000000000"</span> + CutString(MD52(source + keyb), <span class="number">0</span>, <span class="number">16</span>)</span><br><span class="line">                        + source;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">byte</span>[] temp = RC4(source.getBytes(<span class="string">"UTF-8"</span>), cryptkey);</span><br><span class="line">                <span class="keyword">return</span> keyc + Base64.encode(temp);</span><br><span class="line"><span class="comment">//                return keyc + Base64.encodeBytes(temp);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// / &lt;summary&gt;</span></span><br><span class="line">    <span class="comment">// / RC4 原始算法</span></span><br><span class="line">    <span class="comment">// / &lt;/summary&gt;</span></span><br><span class="line">    <span class="comment">// / &lt;param name="input"&gt;原始字串数组&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">// / &lt;param name="pass"&gt;密钥&lt;/param&gt;</span></span><br><span class="line">    <span class="comment">// / &lt;returns&gt;处理后的字串数组&lt;/returns&gt;</span></span><br><span class="line">    <span class="keyword">private</span>  <span class="keyword">byte</span>[] RC4(<span class="keyword">byte</span>[] input, String pass) &#123;</span><br><span class="line">        <span class="keyword">if</span> (input == <span class="keyword">null</span> || pass == <span class="keyword">null</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">byte</span>[] output = <span class="keyword">new</span> <span class="keyword">byte</span>[input.length];</span><br><span class="line">        <span class="keyword">byte</span>[] mBox = GetKey(pass.getBytes(), <span class="number">256</span>);</span><br><span class="line">        <span class="comment">// 加密</span></span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> offset = <span class="number">0</span>; offset &lt; input.length; offset++) &#123;</span><br><span class="line">            i = (i + <span class="number">1</span>) % mBox.length;</span><br><span class="line">            j = (j + (<span class="keyword">int</span>) ((mBox[i] + <span class="number">256</span>) % <span class="number">256</span>)) % mBox.length;</span><br><span class="line">            <span class="keyword">byte</span> temp = mBox[i];</span><br><span class="line">            mBox[i] = mBox[j];</span><br><span class="line">            mBox[j] = temp;</span><br><span class="line">            <span class="keyword">byte</span> a = input[offset];</span><br><span class="line">            <span class="comment">//byte b = mBox[(mBox[i] + mBox[j] % mBox.Length) % mBox.Length];</span></span><br><span class="line">            <span class="comment">// mBox[j] 一定比 mBox.Length 小，不需要在取模</span></span><br><span class="line">            <span class="keyword">byte</span> b = mBox[(toInt(mBox[i]) + toInt(mBox[j])) % mBox.length];</span><br><span class="line"></span><br><span class="line">            output[offset] = (<span class="keyword">byte</span>) ((<span class="keyword">int</span>) a ^ (<span class="keyword">int</span>) toInt(b));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> output;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  String <span class="title">MD52</span><span class="params">(String MD5)</span> </span>&#123;</span><br><span class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        String part = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            MessageDigest md = MessageDigest.getInstance(<span class="string">"MD5"</span>);</span><br><span class="line">            <span class="keyword">byte</span>[] md5 = md.digest(MD5.getBytes());</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; md5.length; i++) &#123;</span><br><span class="line">                part = Integer.toHexString(md5[i] &amp; <span class="number">0xFF</span>);</span><br><span class="line">                <span class="keyword">if</span> (part.length() == <span class="number">1</span>) &#123;</span><br><span class="line">                    part = <span class="string">"0"</span> + part;</span><br><span class="line">                &#125;</span><br><span class="line">                sb.append(part);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">catch</span> (NoSuchAlgorithmException ex) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sb.toString();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">toInt</span><span class="params">(<span class="keyword">byte</span> b)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="keyword">int</span>) ((b + <span class="number">256</span>) % <span class="number">256</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">getUnixTimestamp</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Calendar cal = Calendar.getInstance();</span><br><span class="line">        <span class="keyword">return</span> cal.getTimeInMillis() / <span class="number">1000</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/java/authcode/" data-id="ck0m2ip34000fq4u13jq1ligr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/java/arraylist" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/java/arraylist/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.766Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>封装一个 动态数组 类</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.jdk.data.structures.jdkdatastructures.wlimax;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 自定义数组类</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &lt;E&gt;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LiArrayList</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> E[] data;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 构造函数</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> s 指定数组大小</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">LiArrayList</span><span class="params">(<span class="keyword">int</span> s)</span></span>&#123;</span><br><span class="line">       <span class="comment">//Objec是任意类的父类</span></span><br><span class="line">       <span class="comment">//将任意类 强制类型转换 转换成 E类型  E代表未知</span></span><br><span class="line">       <span class="keyword">this</span>.data =  (E[]) <span class="keyword">new</span> Object[s];</span><br><span class="line">       <span class="keyword">this</span>.size = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 默认构造函数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">LiArrayList</span><span class="params">()</span></span>&#123; <span class="keyword">this</span>(<span class="number">10</span>); &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取数组元素个数</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.size; &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取数组长度</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getCapacity</span><span class="params">()</span></span>&#123; <span class="keyword">return</span>  <span class="keyword">this</span>.data.length; &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断是否为空</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123;  <span class="keyword">return</span> <span class="keyword">this</span>.size ==<span class="number">0</span>; &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 末尾追加元素</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addList</span><span class="params">(E e)</span></span>&#123; add(<span class="keyword">this</span>.size,e); &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 头部追加元素</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addFirst</span><span class="params">(E e)</span></span>&#123; add(<span class="number">0</span>,e); &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 元素追加到指定位置</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index 索引</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e 元素</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> index,E e)</span></span>&#123;</span><br><span class="line">       <span class="keyword">if</span>(index &lt;<span class="number">0</span> || index &gt; <span class="keyword">this</span>.size)&#123; <span class="keyword">throw</span>  <span class="keyword">new</span> IllegalArgumentException(<span class="string">"index error"</span>); &#125;</span><br><span class="line">       <span class="keyword">if</span>(<span class="keyword">this</span>.size == <span class="keyword">this</span>.data.length)&#123;</span><br><span class="line">          <span class="comment">//进行数组扩容</span></span><br><span class="line">          resize(<span class="number">2</span> * <span class="keyword">this</span>.data.length);</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="keyword">this</span>.size-<span class="number">1</span>;i&gt;=index;i--)&#123;</span><br><span class="line">           <span class="keyword">this</span>.data[i+<span class="number">1</span>] = <span class="keyword">this</span>.data[i];</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="keyword">this</span>.data[index] = e;</span><br><span class="line">        <span class="keyword">this</span>.size++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 数组扩容</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> newCapacity 扩容大小</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">resize</span><span class="params">(<span class="keyword">int</span> newCapacity)</span></span>&#123;</span><br><span class="line">       E[] newData = (E[])<span class="keyword">new</span> Object[newCapacity];</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;<span class="keyword">this</span>.size;i++)&#123;</span><br><span class="line">        newData[i] = <span class="keyword">this</span>.data[i];</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="keyword">this</span>.data = newData;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 检查元素是否存在</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;<span class="keyword">this</span>.size;i++)&#123;</span><br><span class="line">          <span class="keyword">if</span>(<span class="keyword">this</span>.data[i].equals(e))<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span>  <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 返回元素对应的索引</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">find</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;<span class="keyword">this</span>.size;i++)&#123;</span><br><span class="line">         <span class="keyword">if</span>(<span class="keyword">this</span>.data[i] == e)<span class="keyword">return</span> i;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span>  -<span class="number">1</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 删除对应索引</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> E <span class="title">remove</span><span class="params">(<span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt; <span class="keyword">this</span>.size)&#123; <span class="keyword">throw</span>  <span class="keyword">new</span> IllegalArgumentException(<span class="string">"index error"</span>); &#125;</span><br><span class="line">      E res = <span class="keyword">this</span>.data[index];</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> i=index+<span class="number">1</span>;i&lt;<span class="keyword">this</span>.size;i++)&#123;</span><br><span class="line">          <span class="keyword">this</span>.data[i-<span class="number">1</span>] = <span class="keyword">this</span>.data[i];</span><br><span class="line">      &#125;</span><br><span class="line">       <span class="keyword">this</span>.size--;</span><br><span class="line">       <span class="keyword">this</span>.data[<span class="keyword">this</span>.size] = <span class="keyword">null</span>; <span class="comment">//需要被垃圾回收的对象</span></span><br><span class="line">      <span class="keyword">if</span>(<span class="keyword">this</span>.size == <span class="keyword">this</span>.data.length/<span class="number">2</span>)&#123; resize(data.length/<span class="number">2</span>); &#125;</span><br><span class="line">      <span class="keyword">return</span> res;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 头部删除</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> E <span class="title">removeFirst</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> remove(<span class="number">0</span>); &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 尾部删除</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> E <span class="title">removeList</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> remove(<span class="keyword">this</span>.size-<span class="number">1</span>); &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 删除指定元素</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">removeElement</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">       <span class="keyword">int</span>  index = find(e);</span><br><span class="line">       <span class="keyword">if</span>(index != -<span class="number">1</span>)&#123; remove(index); &#125;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取指定索引的元素</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">E <span class="title">get</span><span class="params">(<span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line">       <span class="keyword">if</span>(index&lt;<span class="number">0</span>|| index&gt;=<span class="keyword">this</span>.size)&#123; <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"get index error"</span>); &#125;</span><br><span class="line">       <span class="keyword">return</span> <span class="keyword">this</span>.data[index];</span><br><span class="line">   &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取指定索引的元素</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> e</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">set</span><span class="params">(<span class="keyword">int</span> index,E e)</span></span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(index&lt;<span class="number">0</span>|| index&gt;=<span class="keyword">this</span>.size)&#123; <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"set index error"</span>); &#125;</span><br><span class="line">        <span class="keyword">this</span>.data[index] = e;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">       StringBuilder res = <span class="keyword">new</span> StringBuilder();<span class="comment">//一个可变的字符序列。 此类提供与StringBuffer的API，但不保证同步</span></span><br><span class="line">       <span class="comment">//使用指定的格式字符串和参数返回格式化的字符串</span></span><br><span class="line">       res.append(String.format(<span class="string">"Array:size= %d , capacity= %d\n"</span>,<span class="keyword">this</span>.size,<span class="keyword">this</span>.data.length));</span><br><span class="line">       res.append(<span class="string">"["</span>);</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i= <span class="number">0</span>;i&lt;<span class="keyword">this</span>.size;i++)&#123;</span><br><span class="line">          res.append(<span class="keyword">this</span>.data[i]);</span><br><span class="line">          <span class="keyword">if</span>(i !=<span class="keyword">this</span>.size-<span class="number">1</span>)</span><br><span class="line">             res.append(<span class="string">", "</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       res.append(<span class="string">"]"</span>);</span><br><span class="line">       <span class="keyword">return</span> res.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/java/arraylist/" data-id="ck0m2ip33000eq4u143mid9lp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/image/README" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/image/README/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.632Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="fs2"><a href="#fs2" class="headerlink" title="fs2"></a>fs2</h1><p>imgUp.js 和 imgPulgin.js 为上传图片的js插件 使用需要 jquery 示例<br>window.od_pic =new Array();<br>    //图片上传处理<br>    $(“#file”).takungaeImgup({<br>        formData: {<br>            “path”: “/upimg/“,<br>            “name”: “img[]”,<br>        },<br>        url: “/order/update”,<br>        success: function(data) {<br>        },<br>        error: function(err) {</p>
-<pre><code>    }
-});
-//删除图片地址
-$(&apos;.wsdel-ok&apos;).on(&apos;click&apos;,function(e){
-    window.od_pic = [];
-    $(&apos;.up-img&apos;).each(function(){
-        window.od_pic.push($(this).attr(&apos;src&apos;))
-    })
-});</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/image/README/" data-id="ck0m2ip2u0008q4u1py6lcn6a" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/image/imgUp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/image/imgUp/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.631Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        $(function(){
-	var delParent;
-	var defaults = {
-		fileType         : ["jpg","png","bmp","jpeg"],   // 上传文件的类型
-		fileSize         : 1024 * 1024 * 10                  // 上传文件的大小 10M
-	};
-		/*点击图片的文本框*/
-	$(".file").change(function(){	 
-		var idFile = $(this).attr("id");
-		var file = document.getElementById(idFile);
-		var imgContainer = $(this).parents(".z_photo"); //存放图片的父亲元素
-		var fileList = file.files; //获取的图片文件
-		var input = $(this).parent();//文本框的父亲元素
-		var imgArr = [];
-		//遍历得到的图片文件
-		var numUp = imgContainer.find(".up-section").length;
-		var totalNum = numUp + fileList.length;  //总的数量
-		if(fileList.length > 3 || totalNum > 3 ){
-			alert("上传图片数目不可以超过5个，请重新选择");  //一次选择上传超过5个 或者是已经上传和这次上传的到的总数也不可以超过5个
-		}
-		else if(numUp < 3){
-			fileList = validateUp(fileList);
-			for(var i = 0;i<filelist.length;i++){ var imgurl="window.URL.createObjectURL(fileList[i]);" imgarr.push(imgurl); $section="$("<section" class="up-section fl loading">");
-			     imgContainer.prepend($section);
-			 var $span = $("<span class="up-span">");
-			     $span.appendTo($section);
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
 			
-		     var $img0 = $("<img class="close-upimg">").on("click",function(event){
-				    event.preventDefault();
-					event.stopPropagation();
-					$(".works-mask").show();
-					delParent = $(this).parent();
-				});   
-				$img0.attr("src","img/a7.png").appendTo($section);
-		     var $img = $("<img class="up-img up-opcity">");
-		         $img.attr("src",imgArr[i]);
-		         $img.appendTo($section);
-		     var $p = $("<p class="img-name-p">");
-		         $p.html(fileList[i].name).appendTo($section);
-		     var $input = $("<input id="taglocation" name="taglocation" value type="hidden">");
-		         $input.appendTo($section);
-		     var $input2 = $("<input id="tags" name="tags" value type="hidden">");
-		         $input2.appendTo($section);
-		      
-		   }
-		}
-		setTimeout(function(){
-             $(".up-section").removeClass("loading");
-		 	 $(".up-img").removeClass("up-opcity");
-		 },450);
-		 numUp = imgContainer.find(".up-section").length;
-		if(numUp >= 3){
-			$(this).parent().hide();
-		}
-	});
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Elastsearch
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/Elastsearch/ES%E5%A4%8D%E6%9D%82%E8%81%9A%E5%90%88%E6%93%8D%E4%BD%9C/">
+										ES复杂聚合操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/Elastsearch/%E5%B0%81%E8%A3%85%E7%9A%84es%E6%93%8D%E4%BD%9C%E7%B1%BB/">
+										封装的es操作类
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										HTTP
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/HTTP/http/">
+										http
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/HTTP/newhttp/">
+										newhttp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/index/">
+										index
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										java
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/AVLTree/">
+										AVLTree
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/Linkedlist/">
+										Linkedlist
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/StringLength/">
+										StringLength
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/Treemp/">
+										Treemp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/arraylist/">
+										arraylist
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/authcode/">
+										authcode
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/bin2hex/">
+										bin2hex
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/netty/">
+										netty
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/java/wxcode/">
+										wxcode
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										javascript
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/javascript/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/javascript/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%B8%8B%E6%8B%89%E5%8A%A0%E8%BD%BD/">
+										移动端下拉加载
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										liunx
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/liunx/IO%E6%A8%A1%E5%9E%8B/">
+										IO模型
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/liunx/liunx%E5%9F%BA%E7%A1%80/">
+										liunx基础
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/liunx/%E9%9B%B6%E6%8B%B7%E8%B4%9D/">
+										零拷贝
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										maxwell
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/maxwell/maxwell%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5/">
+										maxwell数据同步
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										mysql
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/Explain%E6%98%AF%E4%BB%80%E4%B9%88/">
+										Explain是什么
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/MySQL%E4%BC%98%E5%8C%96/">
+										MySQL优化
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/Mysql%E4%BA%8B%E5%8A%A1/">
+										Mysql事务
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/mysql%20%E6%89%A7%E8%A1%8C%E6%AD%A5%E9%AA%A4/">
+										mysql 执行步骤
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/mysql_innodb/">
+										mysql_innodb
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/mysql/mysql/">
+										mysql
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										php
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/lru/">
+										lru
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/post_url/">
+										post_url
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">
+										图片压缩失败问题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/">
+										数据库连接
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E9%92%89%E9%92%89%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/">
+										钉钉消息推送
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/php/%E9%AB%98%E4%BD%8E%E4%BD%8D%E9%97%AE%E9%A2%98/">
+										高低位问题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										python
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/python/%E5%BE%AE%E4%BF%A1%E8%87%AA%E5%8A%A8%E8%81%8A%E5%A4%A9/">
+										微信自动聊天
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/python/%E7%88%AC%E5%8F%96tapd/">
+										爬取tapd
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										redis
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/redis/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/redis/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/">
+										事件处理
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										sphinx
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/sphinx/PHP-sphinx%E6%93%8D%E4%BD%9C/">
+										PHP-sphinx操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										websocket
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/README/">
+										README
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/app/">
+										app
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/index/">
+										index
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/websocket/socketFn/">
+										socketFn
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										其他
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%85%B6%E4%BB%96/go%E8%BF%9B%E8%A1%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">
+										go进行反向代理
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%85%B6%E4%BB%96/%E4%BD%BF%E7%94%A8openv%E8%BF%9B%E8%A1%8C%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/">
+										使用openv进行人脸识别
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										基础知识
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E4%B8%8E%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/">
+										事件驱动与异步编程
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										小程序
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8B%A6%E6%88%AA%E7%99%BB%E9%99%86/">
+										小程序拦截登陆
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E8%80%81%E7%89%88%E6%9C%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8B%A6%E6%88%AA%E5%99%A8/">
+										老版本小程序拦截器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E6%94%B6%E8%97%8F%E7%9A%84%E7%BD%91%E7%AB%99/">
+										收藏的网站
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										算法
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/TopN%E6%80%9D%E8%B7%AF/">
+										TopN思路
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-lru/">
+										leetcode-lru
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/">
+										leetcode-两数相加
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E6%89%BE%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9C%80%E5%B0%8F%E6%95%B0/">
+										leetcode-找数组中最小数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E6%9C%80%E5%A4%A7%E7%9F%A9%E5%BD%A2/">
+										leetcode-最大矩形
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E6%AD%A3%E5%88%99%E6%90%9C%E7%B4%A2/">
+										leetcode-正则搜索
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E8%BD%A6%E7%9A%84%E5%8F%AF%E7%94%A8%E6%8D%95%E8%8E%B7%E9%87%8F/">
+										leetcode-车的可用捕获量
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E8%BF%94%E5%9B%9E%E4%B8%8B%E6%A0%87/">
+										leetcode-返回下标
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/leetcode-%E9%A4%90%E7%9B%98%E6%A0%88/">
+										leetcode-餐盘栈
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/lettcode-%E6%9F%B1%E7%8A%B6%E5%9B%BE%E4%B8%AD%E6%9C%80%E5%A4%A7%E7%9A%84%E7%9F%A9%E5%BD%A2/">
+										lettcode-柱状图中最大的矩形
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E5%8E%BB%E9%87%8D/">
+										去重
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E6%89%BE%E4%B8%AD%E4%BD%8D%E6%95%B0/">
+										找中位数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/">
+										排序
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/09/21/%E7%AE%97%E6%B3%95/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/">
+										斐波那契数列
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<div id="index">
 	
+		<div class="index-li">
+			<a href="/2020/09/21/mysql/mysql%20%E6%89%A7%E8%A1%8C%E6%AD%A5%E9%AA%A4/">
+				<h2 class="index-title">
+					mysql 执行步骤
+				</h2>
+				<div class="index-brief">
+					mysql 执行步骤
+
+MySQL 可以分为 Server 层和存储引擎层两部分
+Server 层包括连接器、查询缓存、分析器、优化器、执行器等，涵盖 MySQL 的大多数核心服 务功能，以及所有的内置函数（如日期、时间、数学和加密函数等），所有跨存储引擎的功能都 在这一层实现，比如存储过程、触发器
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
 	
-   
-    $(".z_photo").delegate(".close-upimg","click",function(){
-     	  $(".works-mask").show();
-     	  delParent = $(this).parent();
-	});
-		
-	// $(".wsdel-ok").click(function(){
-	// 	$(".works-mask").hide();
-	// 	var numUp = delParent.siblings().length;
-	// 	if(numUp < 4){
-	// 		delParent.parent().find(".z_file").show();
-	// 	}
-	// 	 delParent.remove();
-	// });
+		<div class="index-li">
+			<a href="/2020/09/21/mysql/Explain%E6%98%AF%E4%BB%80%E4%B9%88/">
+				<h2 class="index-title">
+					Explain是什么
+				</h2>
+				<div class="index-brief">
+					Explain是什么 
+1    SIMPLE    dlc_device    index    index_siteid    index_siteid    4        7391    Using where
+使用Explain关键字可以模拟优化器执行SQL查询语句,从而知道MySQL是
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
 	
-	$(".wsdel-no").click(function(){
-		$(".works-mask").hide();
-	});
-		
-		function validateUp(files){
-			var arrFiles = [];//替换的文件数组
-			for(var i = 0, file; file = files[i]; i++){
-				//获取文件上传的后缀名
-				var newStr = file.name.split("").reverse().join("");
-				if(newStr.split(".")[0] != null){
-						var type = newStr.split(".")[0].split("").reverse().join("");
-						console.log(type+"===type===");
-						if(jQuery.inArray(type, defaults.fileType) > -1){
-							// 类型符合，可以上传
-							if (file.size >= defaults.fileSize) {
-								alert(file.size);
-								alert('您这个"'+ file.name +'"文件大小过大');	
-							} else {
-								// 在这里需要判断当前所有文件中
-								arrFiles.push(file);	
-							}
-						}else{
-							alert('您这个"'+ file.name +'"上传类型不符合');	
-						}
-					}else{
-						alert('您这个"'+ file.name +'"没有类型, 无法识别');	
-					}
-			}
-			return arrFiles;
-		}
-		
-	
-	
-})
-</p></span></filelist.length;i++){>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/image/imgUp/" data-id="ck0m2ip2x000aq4u143t1xxqy" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/image/imgPlugin" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/image/imgPlugin/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.630Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        ;(function($) {
-	var imageNum = 3;
-	if ($("#maxImageNum").val() != null) {
-		imageNum = $("#maxImageNum").val();
-	}
-    var delParent;
-	
-	$.fn.extend({
-				takungaeImgup : function(opt, serverCallBack) {
-					if (typeof opt != "object") {
-						alert('参数错误!');
-						return;
-					}
-
-					var $fileInput = $(this);
-					var $fileInputId = $fileInput.attr('id');
-
-					var defaults = {
-						fileType : [ "jpg", "png", "bmp", "jpeg","JPG","PNG","JPEG","BMP" ], // 上传文件的类型
-						fileSize : 1024 * 1024 * 10, // 上传文件的大小 10M
-						count : 0
-					// 计数器
-					};
-
-					// 组装参数;
-
-					if (opt.success) {
-						var successCallBack = opt.success;
-						delete opt.success;
-					}
-
-					if (opt.error) {
-						var errorCallBack = opt.error;
-						delete opt.error;
-					}
-
-					/* 点击图片的文本框 */
-					$(this).change(function() {
-						var reader = new FileReader(); // 新建一个FileReader();
-						var idFile = $(this).attr("id");
-						var file = document.getElementById(idFile);
-						var imgContainer = $(this).parents(".z_photo"); // 存放图片的父亲元素
-						var fileList = file.files; // 获取的图片文件
-						var input = $(this).parent();// 文本框的父亲元素
-						var imgArr = [];
-						// 遍历得到的图片文件
-						var numUp = imgContainer.find(".up-section").length;
-						var totalNum = numUp + fileList.length; // 总的数量
-						if (fileList.length > imageNum|| totalNum > imageNum) {
-							alert("上传图片数目不可以超过5个，请重新选择"); // 一次选择上传超过5个
-							// 或者是已经上传和这次上传的到的总数也不可以超过5个
-						} else if (numUp < imageNum) {
-							fileList = validateUp(fileList,defaults);
-							for ( var i = 0; i < fileList.length; i++) {
-								var imgUrl = window.URL.createObjectURL(fileList[i]);
-								imgArr.push(imgUrl);
-								var $section = $("<section class="up-section fl loading">");
-								imgContainer.children(".z_file").before($section);
-								var $span = $("<span class="up-span">");
-								$span.appendTo($section);
-								var $img0 = $("<img class="close-upimg">").on("click",function(event){
-											    event.preventDefault();
-												event.stopPropagation();
-												$(".works-mask").show();
-												delParent = $(this).parent();
-								});
-								$img0.attr("src","/img/a7.png").appendTo($section);
-								var $img = $("<img class="up-img up-opcity">");
-								// $img.attr("src", imgArr[i]);
-								// $img.attr("src", "");
-								$img.appendTo($section);
-								var $p = $("<p class="img-name-p">");
-								$p.html(fileList[i].name).appendTo($section);
-                                var $input = $("<input id="taglocation" name="taglocation" value type="hidden">");
-						        $input.appendTo($section);
-						        var $input2 = $("<input id="tags" name="tags" value type="hidden">");
-						        $input2.appendTo($section);
-								uploadImg(opt, fileList[i],$section);
-							}
-							;
-						}
-						
-						numUp = imgContainer.find(".up-section").length;
-						if (numUp >= imageNum) {
-							$(this).parent().hide();
-						}
-						;
-						//input内容清空
-						$(this).val("");
-					});
-
+		<div class="index-li">
+			<a href="/2020/09/21/maxwell/maxwell%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5/">
+				<h2 class="index-title">
+					maxwell数据同步
+				</h2>
+				<div class="index-brief">
 					
-					$(".z_photo").delegate(".close-upimg", "click", function(event) {
-						event.preventDefault();
-						event.stopPropagation();
-						$(".works-mask").show();
-						delParent = $(this).parent();
-						console.log(delParent.html()+"delegzat=======");
-					});
+方案一
+mysql 通过binlog  同步给 maxwell  
+-&gt; maxwell解析binlog日志 同步给kafka 
+-&gt; 使用php swoole的定时功能 通过定时器 获取kafka的数据
+-&gt; 获取出来的数据 导入到elasticsearch
+-&gt; 创建索
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/liunx/%E9%9B%B6%E6%8B%B7%E8%B4%9D/">
+				<h2 class="index-title">
+					零拷贝
+				</h2>
+				<div class="index-brief">
+					零拷贝liunx 磁盘io流程
+磁盘 -&gt; 磁盘cache -|-&gt; IO驱动层 -&gt; 系统内核内核buffer/cache -|-&gt;  系统调用 write() -&gt; 用户内核buffter   
+###传统的IO会触发四次拷贝  read + write 
+① 发出
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/liunx/liunx%E5%9F%BA%E7%A1%80/">
+				<h2 class="index-title">
+					liunx基础
+				</h2>
+				<div class="index-brief">
+					一.系统安装    安装一个英文的操作系统(下午作业)二.基本命令    命令使用方法： 命令 +  [选项] + [参数]    命令：做一件事的动作本身    选项：是命令的修正，更加细化的描述        选项分类： 长选项、短选项        长选项：–开头，后面通常都是跟的一个完整的单
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/liunx/IO%E6%A8%A1%E5%9E%8B/">
+				<h2 class="index-title">
+					IO模型
+				</h2>
+				<div class="index-brief">
+					liunx 中存在五种IO模型
+阻塞    同步非阻塞     IO多路复用  信号驱动IO  异步IO
+liunx 磁盘io流程
+磁盘 -&gt; 磁盘cache -|-&gt; IO驱动层 -&gt; 系统内核内核buffer/cache -|-&gt;  系统调用 write() -&gt; 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/javascript/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%B8%8B%E6%8B%89%E5%8A%A0%E8%BD%BD/">
+				<h2 class="index-title">
+					移动端下拉加载
+				</h2>
+				<div class="index-brief">
+					移动端下拉加载
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/javascript/README/">
+				<h2 class="index-title">
+					README
+				</h2>
+				<div class="index-brief">
+					1.移动端下拉加载
 
-					$(".wsdel-ok").click(function(event) {
-						event.preventDefault();
-						event.stopPropagation();
-						$(".works-mask").hide();
-						var numUp = delParent.siblings(".up-section").length;
-						if (numUp < imageNum + 1) {
-							delParent.parent().find(".z_file").show();
-						}
-						delParent.remove();
-					});
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/java/wxcode/">
+				<h2 class="index-title">
+					wxcode
+				</h2>
+				<div class="index-brief">
+					微信解密方法​    获取用户流程  小程序/公众号 
+  前端获取code ,跟加密后的数据, 使用code 去腾讯后台获取解密 数据的key ,但是比较坑的是官方没有提供java版本的解密方法 ,只有c++,php,node,python的
+123456789101112131415161718
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/09/21/java/Treemp/">
+				<h2 class="index-title">
+					Treemp
+				</h2>
+				<div class="index-brief">
+					二分映射树
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-09-21</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+	
+	<div id="index-paginator">
+		
+			<a class="extend prev" rel="prev" href="/page/4/">&lt;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/6/">&gt;</a>
+		
+	</div>
+</div>
 
-					$(".wsdel-no").click(function() {
-						$(".works-mask").hide();
-					});
+	</div>
+	<div id="footer">
+	<p>
+	©2017-<span id="footerYear"></span>
+	<a href="/">li zhengwu</a>
 
-					// 验证文件的合法性
-					function validateUp(files, defaults) {
-						var arrFiles = [];// 替换的文件数组
-						for ( var i = 0, file; file = files[i]; i++) {
-							// 获取文件上传的后缀名
-							var newStr = file.name.split("").reverse().join("");
-							if (newStr.split(".")[0] != null) {
-								var type = newStr.split(".")[0].split("")
-										.reverse().join("");
-								console.log(type + "===type===");
-								if (jQuery.inArray(type, defaults.fileType) > -1) {
-									// 类型符合，可以上传
-									if (file.size >= defaults.fileSize) {
-										alert('文件大小"' + file.name + '"超出10M限制！');
-									} else {
-										arrFiles.push(file);
-									}
-								} else {
-									alert('您上传的"' + file.name + '"不符合上传类型');
-								}
-							} else {
-								alert('您上传的"' + file.name + '"无法识别类型');
-							}
-						}
-						return arrFiles;
-					}
-					;
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv">
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="https://wulimax.github.io/" target="_blank">Tree</a>
+	by <a href="https://github.com/wulimax/blogs" target="_blank">wulimax</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript">
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
 
-					function uploadImg(opt, file, obj) {
-						$("#imguploadFinish").val(false);
-						// 验证通过图片异步上传
-						var url = opt.url;
-						var data = new FormData();
-						data.append("path", opt.formData.path);
-						data.append("file", file);
-						$.ajax({
-							type : 'POST',
-							url : url,
-							data : data,
-							processData : false,
-							contentType : false,
-							dataType : 'json',
-							success : function(data) {
-                                window.od_pic.push(data['data']);
-                                $('.up-img').each(function(){
-                                    if($(this).attr('src') == undefined){
-                                        $(this).attr('src',data['data']);
-									}
-								});
-								// obj.remove();
-								// 上传成功
-								if (data.error == 0) {
-									$(".up-section").removeClass("loading");
-									$(".up-img").removeClass(
-											"up-opcity");
-									$("#imguploadFinish").val(true);
-									var htmlStr = "<input type="text" style="display:none;" name=""
-											+ opt.formData.name
-											+ "" value=""
-											+ data.url
-											+ "">";
-									obj.append(htmlStr);
-									if (successCallBack) {
-										successCallBack(data);
-									}
-								}
-
-								if (data.error == 1) {
-									obj.remove();
-									$("#imguploadFinish").val(false);
-									if (errorCallBack) {
-										errorCallBack(data.url);
-									}
-								}
-							},
-							error : function(e) {
-								obj.remove();
-								var err = "上传失败，请联系管理员！";
-								$("#imguploadFinish").val(false);
-								if (errorCallBack) {
-									errorCallBack(err);
-								}
-							}
-						});
-					}
-
-				}
-			});
-
-})(jQuery);
-</p></span></section>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/image/imgPlugin/" data-id="ck0m2ip2v0009q4u16eh771i8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/HTTP/README" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/HTTP/README/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.626Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##通讯网络</p>
-<p><a href="https://github.com/wulimax/blogs/blob/master/docs/HTTP/http.md" target="_blank" rel="noopener">1.一次网络请求的思考</a>;</p>
-<p><a href="https://github.com/wulimax/blogs/blob/master/docs/HTTP/newhttp.md" target="_blank" rel="noopener">2.http历史</a>;</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/HTTP/README/" data-id="ck0m2ip2n0003q4u1obq3cfcd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/HTTP/newhttp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/HTTP/newhttp/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.582Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>HTTP -&gt; QUIC协议之ORTT加密传输</p>
-<p>在了解这个协议前我们先了解一下http近些年来的发展情况</p>
-<p>一 http/1</p>
-<ol>
-<li><p>http1.x </p>
-<p>​       缺陷:线程阻塞,同一时间 同一域名的请求数量限制超过限制数目会被阻塞 链接无法复用  header头携带内容过大增加传输成本 传输都是明文数据无法保证安全性</p>
-</li>
-<li><p>http1.0 </p>
-<p>​          缺陷:游览器于服务器只保持短暂的链接 游览器每次都需要建立TCP链接 新建成本很高 规定新建请求必须<code>request-response</code>才能新建链接 ,可能发送阻塞</p>
-</li>
-<li><p>http1.1 </p>
-<p>​      引入持久链接 即TCP默认不关闭,可以被多个请求复用,不用声明 Connoction : keep-alive 大多数游览器支持同时建立6个链接 –链接是顺序执行的也就意味着会发生阻塞</p>
-<p>​       管道机制:同一个TCP客户端可以发起多个请求</p>
-<p>​       分块传输: 即服务器产生一块就发送一块</p>
-</li>
-<li><p>http2.0 </p>
-<p>​     http2.0基于 SPDY3 专注性能 对header进行压缩  采用二进制传输数据 比起http1.x文本传输更高效</p>
-<p>​       SPDY增加了一个帧层用于多路复用，多个并发流通过一个TCP连接（或者其他可靠传输流）。这个帧层为类似HTTP的请求响应流进行了优化，现在运行在HTTP之上的应用也能运行在SPDY之上，对web应用开发者来说几乎不需要做什么改变。</p>
-<p>SPDY会话在HTTP的基础之上提供了四项改进：</p>
-<p>​    多路复用请求：在单个SPDY连接能并发的发起请求，并不限制请求数；<br>​    请求优先级：客户端能请求某个资源被优先传输。这避免了高优先级请求被非关键资源堵塞网络通道的问题；<br>​    头部压缩：客户端现在发送了大量冗余的HTTP头部信息。因为一个页面可能有50到100个子请求，这些数据是巨大的；<br>​    服务端推送流：服务端能向客户端推送数据不需要客户端发起一个请求。</p>
-<p>SPDY视图保持已有的HTTP语义。所有的特性比如cookies，Etags，Vary headers，Content-Encoding协商，SPDY仅仅替换了网络数据传输方法。</p>
-<p>​         SPDY是在会话层做出的改变 所有不会影响应用层http </p>
-</li>
-<li><p>http3.0 </p>
-<p>​      http3.0 原生支持多路复用,http2是基于TCP的多路复用</p>
-<p>​     相对安全 所有header body 都加密</p>
-<p>​     向前纠错 一两个包出现异常也可以通过其他包解开,减少网络开销</p>
-</li>
-</ol>
-<p>​               Google搞了一个基于UDP协议的QUIC协议,并应用在http3上 QUIC使用ORTT建立连接</p>
-<p> 所谓的ORTT就是,通信双方通信连接时,第一个数据包便可以携带有效的业务数据数据</p>
-<p>​            对于http而言需要三次握手 客户端发送SYN-&gt;服务员器, 服务器确定发送SYN确认包/ACK验证包-&gt;客户端,客户端发送ACK确认包-&gt;服务端</p>
-<p>​           对于https而言除了三次握手还需要额外的TLS握手</p>
-<p>​         ORTT 使用DH算法进行做秘钥协商</p>
-<p>​          Step 0：配置服务器密钥对</p>
-<p>​                     在生成一个素数和一个整数(是的一个原根，不懂可略过)，同时随机生成一个数，计算：</p>
-<p>​                     将三元组打成一个config包。</p>
-<p>​           Step 1：首次发起连接</p>
-<p>​                      简单地发送Client Hello到。</p>
-<p>​          Step 2：首次回应</p>
-<p>​                             用config封装成一个数据包回复给，显然内含有元组。</p>
-<p>​       Step 3：发送加密数据</p>
-<p>​                     收到后随机生成一个数做如下计算：<br>​                   计算公钥：<br>​                    计算对称密钥：<br>​                    准备业务数据payload1，设加密函数为，将下列元组发送给： </p>
-<p>​                       注意，该阶段开始，payload便是加密的了。</p>
-<p>​      Step 4：发送加密数据</p>
-<p>​                  收到后，做以下计算：<br>​                计算对称密钥：<br>​                 可以证明，和端的是相等的： </p>
-<p>​                  因此可解密密文获取明文payload。</p>
-<p>​                 也许你会觉得就可以做此后通信的对称密钥了吧，然而并不是。为了所谓的前向安全性，此时会继续生成第二个对称密钥<br>​                 在发送自己的payload2之前，随机生成一个数，做如下计算：<br>​                 计算新的通信公钥：<br>​                 计算新的通信对称密钥：<br>​                  有了新的通信对称密钥，就可以将下面的元组发送给了： </p>
-<p>​                  这个元组中除了包含的加密数据之外，还包括新生成的一个公钥。</p>
-<p>Step 5：收到的</p>
-<p>​                收到发来的后，解出其中的，做如下运算：<br>​               计算新的通信密钥：(可以证明)<br>​               用可以正确解密出payload2。<br>​                   此后的通讯，和便可以用做通信对称密钥了。</p>
-<p>值得注意的是，这个是在1个RTT内新生成的，虽然耗费了1个RTT协商出了这个，但是在这个RTT中业务数据却依然可以加密通信的，只不过使用的是，即使用记忆中的端配置协商出的一个“不安全”的密钥，该密钥仅仅加密一趟数据。</p>
-<p>​      Step 6：和断开连接<br>​                和之间通信一会儿后，断开连接。 </p>
-<p>​      Step 7：直接发送加密数据<br>​                   过了一会儿或者一段时间后，又想和通信，注意，此时已经有了的config元组，也许是缓存在内存了，也许是写入磁盘了，无论怎样，只要拥有，它就可以直接从Step 3开始了，也就是说直接通过以及自己生成的随机数私钥计算出一个对称密钥，然后直接发送payload了。<br>嗯，这就是所谓的0RTT。</p>
-<p>Step 8：发送加密数据 </p>
-<p>​          这里在收到的加密数据后，重复Step 4重新计算出一个新的“安全对称密钥”即可将之作为直至断开为止的对称密钥。</p>
-<p>​       </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/HTTP/newhttp/" data-id="ck0m2ip2q0005q4u1fs3dfjay" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/HTTP/http" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/HTTP/http/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.580Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="关于一次请求生命周期的思考"><a href="#关于一次请求生命周期的思考" class="headerlink" title="关于一次请求生命周期的思考"></a>关于一次请求生命周期的思考</h1><h2 id="1-DNS解析"><a href="#1-DNS解析" class="headerlink" title="1. DNS解析"></a>1. DNS解析</h2><p>####<em>什么是DNS解析？当用户输入一个网址并按下回车键的时候，浏览器得到了一个域名。而在实际通信过程中，我们需要的是一个IP地址。因此我们需要先把域名转换成相应的IP地址，这个过程称作DNS解析。</em></p>
-<h4 id="1-浏览器首先搜索浏览器自身缓存的DNS记录。"><a href="#1-浏览器首先搜索浏览器自身缓存的DNS记录。" class="headerlink" title="1) 浏览器首先搜索浏览器自身缓存的DNS记录。"></a>1) 浏览器首先搜索浏览器自身缓存的DNS记录。</h4><p>　　或许很多人不知道，浏览器自身也带有一层DNS缓存。Chrome 缓存1000条DNS解析结果，缓存时间大概在一分钟左右。</p>
-<p>　　（Chrome浏览器通过输入：chrome://net-internals/#dns 打开DNS缓存页面）</p>
-<h4 id="2-如果浏览器缓存中没有找到需要的记录或记录已经过期，则搜索hosts文件和操作系统缓存。"><a href="#2-如果浏览器缓存中没有找到需要的记录或记录已经过期，则搜索hosts文件和操作系统缓存。" class="headerlink" title="　　2) 如果浏览器缓存中没有找到需要的记录或记录已经过期，则搜索hosts文件和操作系统缓存。"></a>　　2) 如果浏览器缓存中没有找到需要的记录或记录已经过期，则搜索hosts文件和操作系统缓存。</h4><p>　　在Windows操作系统中，可以通过 ipconfig /displaydns 命令查看本机当前的缓存。</p>
-<p>　　通过hosts文件，你可以手动指定一个域名和其对应的IP解析结果，并且该结果一旦被使用，同样会被缓存到操作系统缓存中。</p>
-<p>　　Windows系统的hosts文件在%systemroot%\system32\drivers\etc下，linux系统的hosts文件在/etc/hosts下。</p>
-<h4 id="3-如果在hosts文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服务器发送解析请求。"><a href="#3-如果在hosts文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服务器发送解析请求。" class="headerlink" title="　　3) 如果在hosts文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服务器发送解析请求。"></a>　　3) 如果在hosts文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服务器发送解析请求。</h4><p>　　其实第一台被访问的域名解析服务器就是我们平时在设置中填写的DNS服务器一项，当操作系统缓存中也没有命中的时候，系统会向DNS服务器正式发出解析请求。这里是真正意义上开始解析一个未知的域名。</p>
-<p>　　一般一台域名解析服务器会被地理位置临近的大量用户使用（特别是ISP的DNS），一般常见的网站域名解析都能在这里命中。</p>
-<h4 id="4-如果域名解析服务器也没有该域名的记录，则开始递归-迭代解析。"><a href="#4-如果域名解析服务器也没有该域名的记录，则开始递归-迭代解析。" class="headerlink" title="　　4) 如果域名解析服务器也没有该域名的记录，则开始递归+迭代解析。"></a>　　4) 如果域名解析服务器也没有该域名的记录，则开始递归+迭代解析。</h4><p>　　这里我们举个例子，如果我们要解析的是mail.google.com。</p>
-<p>　　首先我们的域名解析服务器会向<strong>根域服务器</strong>（全球只有13台）发出请求。显然，仅凭13台服务器不可能把全球所有IP都记录下来。所以根域服务器记录的是com域服务器的IP、cn域服务器的IP、org域服务器的IP……。如果我们要查找.com结尾的域名，那么我们可以到com域服务器去进一步解析。所以其实这部分的域名解析过程是一个树形的搜索过程</p>
-<p><img src="./1543479140109.png" alt="1543479140109"></p>
-<p>  根域服务器告诉我们<strong>com域服务器</strong>的IP。</p>
-<p>　　接着我们的域名解析服务器会向<strong>com域服务器</strong>发出请求。根域服务器并没有mail.google.com的IP，但是却有<strong>google.com域服务器</strong>的IP。</p>
-<p>　　接着我们的域名解析服务器会向<strong>google.com域服务器</strong>发出请求。…</p>
-<p>　　如此重复，直到获得mail.google.com的IP地址。</p>
-<p>　　为什么是递归：问题由一开始的本机要解析mail.google.com变成域名解析服务器要解析mail.google.com，这是递归。</p>
-<p>　　为什么是迭代：问题由向根域服务器发出请求变成向com域服务器发出请求再变成向google.com域发出请求，这是迭代。</p>
-<p>​       为什么全球只有13台根服务器 : 因为UDP给ip只有512个字节要把13个根服务器存储进去</p>
-<h4 id="5-获取域名对应的IP后，一步步向上返回，直到返回给浏览器。"><a href="#5-获取域名对应的IP后，一步步向上返回，直到返回给浏览器。" class="headerlink" title="　　5) 获取域名对应的IP后，一步步向上返回，直到返回给浏览器。"></a>　　5) 获取域名对应的IP后，一步步向上返回，直到返回给浏览器。</h4><h2 id="2-补充一点CDN知识"><a href="#2-补充一点CDN知识" class="headerlink" title="2.补充一点CDN知识"></a>2.补充一点CDN知识</h2><h3 id="CDN-是什么"><a href="#CDN-是什么" class="headerlink" title="CDN 是什么"></a>CDN 是什么</h3><p>​       <strong>CDN</strong>（Content Delivery Network，内容分发网络），即全网内容加速服务。为了尽可能的避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定，由此，诞生了 CDN 加速服务。</p>
-<p>通过ip/为止找最近的 距离用户最近的资源服务器</p>
-<h2 id="3-建立tcp链接"><a href="#3-建立tcp链接" class="headerlink" title="3.建立tcp链接"></a>3.建立tcp链接</h2><p><img src="./1543479675564.png" alt="1543479675564"></p>
-<p>##4.服务端负载</p>
-<p>   根据自己公司的负载架构 指定具体某台服务器处理这次请求</p>
-<p>​    当网络不太好时TCP使用 拥塞控制 </p>
-<p>​     慢开始: 先探测 由小到大 逐渐增大网络包</p>
-<p>​    拥塞避免: 记录往返的RTT时间  计算发包时间大小</p>
-<p>   快重传 &amp;快恢复 : 收到网络包立刻恢复 不等数据返回稍带回复 </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/HTTP/http/" data-id="ck0m2ip2p0004q4u12bgqqght" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docs/arithmetic/README" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/16/docs/arithmetic/README/" class="article-date">
-  <time datetime="2019-09-16T07:05:47.572Z" itemprop="datePublished">2019-09-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="算法小练"><a href="#算法小练" class="headerlink" title="算法小练"></a>算法小练</h2><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**每日一练 2018/12/05</span></span><br><span class="line"><span class="comment"> * 选择排序: 每次选择一个数 然后遍历其后的每一个数,和这个数比较</span></span><br><span class="line"><span class="comment"> * 时间复杂度:O(N^2)</span></span><br><span class="line"><span class="comment"> * 算法特点: 排序时间和初始顺序无关 无论顺序如何都是O(N^2)</span></span><br><span class="line"><span class="comment"> * */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sortIntegers</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr == <span class="keyword">null</span> || arr.length &lt;= <span class="number">1</span>)&#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">    <span class="keyword">for</span> ( <span class="keyword">int</span> i =<span class="number">0</span>;i &lt; arr.length ;i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> min = i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i +<span class="number">1</span>;j&lt;arr.length;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(arr[j] &lt; arr[min])&#123;</span><br><span class="line">                min = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> tmp = arr[min];</span><br><span class="line">        arr[min] = arr[i];</span><br><span class="line">        arr[i] = tmp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**每日一练 2018/12/06</span></span><br><span class="line"><span class="comment"> * 插入排序:像打牌时整理牌,小的插入到左边,大的插入到右边</span></span><br><span class="line"><span class="comment"> * 算法特点: 最坏的情况下复杂度O(N^2)</span></span><br><span class="line"><span class="comment"> * 依赖于初始排序顺序 ,特别适合于部分有序数组 完全是有序数组的情况下 复杂度为O(N)</span></span><br><span class="line"><span class="comment"> * 逆时排序是复杂度为 O(N^2)</span></span><br><span class="line"><span class="comment"> * */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sortIntegers2</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr == <span class="keyword">null</span> || arr.length &lt;= <span class="number">1</span>)&#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;arr.length ;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j =i;j&gt;<span class="number">0</span>;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(arr[j] &lt;arr[j-<span class="number">1</span>])&#123;</span><br><span class="line">                <span class="keyword">int</span> tmp = arr[j];</span><br><span class="line">                arr[j-<span class="number">1</span>] = tmp;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**每日一练:冒泡排序</span></span><br><span class="line"><span class="comment"> * 冒泡排序 :像冒泡泡一样,每次一个数滚到最后去</span></span><br><span class="line"><span class="comment"> * 时间复杂度: O(N^2)</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> arr</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sortIntegers3</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr == <span class="keyword">null</span> || arr.length &lt; <span class="number">1</span>)&#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">    <span class="keyword">boolean</span> needNextPass = <span class="keyword">true</span>;</span><br><span class="line">    <span class="comment">//经历一次外层循环最大的数到最后</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length-<span class="number">1</span> &amp;&amp; needNextPass;i++)&#123;</span><br><span class="line">        needNextPass = <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j =<span class="number">0</span>;j &lt; arr.length -i-<span class="number">1</span>;j++)&#123;</span><br><span class="line">            <span class="comment">//如果亮亮比较左边数均小于右边的数那说明已经排序好了,无须进行下一次遍历</span></span><br><span class="line">            <span class="keyword">if</span>(arr[j] &gt; arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">                <span class="keyword">int</span> tmp = arr[j];</span><br><span class="line">                arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">                arr[j+<span class="number">1</span>] = tmp;</span><br><span class="line">                needNextPass = <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://wulimax.github.io/2019/09/16/docs/arithmetic/README/" data-id="ck0m2ip2t0007q4u12uswo5hx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/page/4/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/">下一页 &raquo;</a>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/09/16/url/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/16/README/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/16/docs/wx/README/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/16/docs/wx/intercepto/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/16/docs/TopN/README/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 wulimax<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>
 </html>
