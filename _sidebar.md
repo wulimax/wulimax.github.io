@@ -33,7 +33,7 @@
 * 搜索
   * [Sphinx造轮子](/docs/sphinx/README.md)
   * [ElasticSearch聚合后再进行计算](/docs/maxwell/ESaggs.md)
-  * [14.elasticsearch api ](/docs/maxwell/ESapi.md)
+  * [elasticsearch api ](/docs/maxwell/ESapi.md)
 
 
 * 算法
@@ -44,7 +44,8 @@
   * [设计模式](/docs/designpattern/README.md)
 
 * 爬虫
-  * [爬虫初探](/docs/python/tapd.md)
+  * [爬取tapd](/docs/python/tapd.md)
+  * [爬取gitboot](/docs/python/crawling_gitboot.md)
 
 * 其他
   * [微信自动聊天机器人](/docs/python/wx_user.md)
