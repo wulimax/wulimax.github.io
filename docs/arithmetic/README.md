@@ -29,4 +29,5 @@
 [690. 员工的重要性 ](/docs/arithmetic/14.md)
 
 [42. 接雨水](/docs/arithmetic/15.md)
+[剑指 Offer 25. 合并两个排序的链表](/docs/arithmetic/16.md)
 
