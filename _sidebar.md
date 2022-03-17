@@ -47,6 +47,9 @@
   * [爬取tapd](/docs/python/tapd.md)
   * [爬取gitboot](/docs/python/crawling_gitboot.md)
 
+* 工具
+  * [数据库TPS测试](/docs/utils/mysql_tps.md)
+
 * 其他
   * [微信自动聊天机器人](/docs/python/wx_user.md)
   * [spark](/docs/spark/README.md)
