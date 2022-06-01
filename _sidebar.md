@@ -54,6 +54,7 @@
   * [微信自动聊天机器人](/docs/python/wx_user.md)
   * [spark](/docs/spark/README.md)
   * [图像识别](/docs/learning/README.md)
+  * [爬取m3u8视频转mp4](/docs/other/download_m3u8.md)
 
 
 * 分享
