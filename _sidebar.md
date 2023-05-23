@@ -21,7 +21,8 @@
 * 数据库
   * [mysql](/docs/mysql/README.md)
   * [数据同步方案](/docs/maxwell/README.md)
-
+  * [数据库迁移](/docs/maxwell/migration.md)
+  
 * 缓存
   * [redis](/docs/redis/README.md)
 
