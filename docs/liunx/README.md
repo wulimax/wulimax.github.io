@@ -6,3 +6,5 @@
 
 [零拷贝& 缺页中断](/docs/liunx/zcopy.md)
 
+[kernel oom log](/docs/liunx/kernel_oom.md)
+
